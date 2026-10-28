@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/santiago/Imagens/p3/images.png" added="2026-09-30T09:31:21.709924Z" modified="2026-09-30T09:31:21.709928Z" visited="2026-09-30T09:31:21.709924Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox_firefox %u&apos;" modified="2026-09-30T09:31:21.709926Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/santiago/Transfer%C3%AAncias/hello.tex" added="2026-10-07T08:51:59.767630Z" modified="2026-10-07T08:51:59.767642Z" visited="2026-10-07T08:51:59.767631Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-tex"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox_firefox %u&apos;" modified="2026-10-07T08:51:59.767636Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/santiago/Transfer%C3%AAncias/doc.tex" added="2026-10-14T08:14:19.264702Z" modified="2026-10-14T08:14:19.264707Z" visited="2026-10-14T08:14:19.264703Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-tex"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox_firefox %u&apos;" modified="2026-10-14T08:14:19.264704Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/santiago/Transfer%C3%AAncias/Cap1-2-DecomposicaoLUeLDU.pdf" added="2026-10-27T21:36:06.207783Z" modified="2026-10-27T21:36:06.207789Z" visited="2026-10-27T21:36:06.207784Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox_firefox %u&apos;" modified="2026-10-27T21:36:06.207785Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/santiago/Transfer%C3%AAncias/Cap3-1-Determinantes.pdf" added="2026-10-27T21:38:58.749287Z" modified="2026-10-27T21:38:58.749293Z" visited="2026-10-27T21:38:58.749288Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox_firefox %u&apos;" modified="2026-10-27T21:38:58.749289Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/santiago/Transfer%C3%AAncias/Folha%20TP2.pdf" added="2026-10-27T21:41:23.961059Z" modified="2026-10-27T21:41:23.961064Z" visited="2026-10-27T21:41:23.961060Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox_firefox %u&apos;" modified="2026-10-27T21:41:23.961062Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/santiago/Transfer%C3%AAncias/Solu%C3%A7%C3%B5es%20da%20Folha%20TP2.pdf" added="2026-10-27T21:42:49.777049Z" modified="2026-10-27T21:42:49.777054Z" visited="2026-10-27T21:42:49.777050Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox_firefox %u&apos;" modified="2026-10-27T21:42:49.777052Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

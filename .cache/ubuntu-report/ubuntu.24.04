@@ -1,0 +1,67 @@
+{
+  "Version": "24.04",
+  "OEM": {
+    "Vendor": "HP",
+    "Product": "HP EliteBook 850 G8 Notebook PC",
+    "Family": "103C_5336AN HP EliteBook"
+  },
+  "BIOS": {
+    "Vendor": "HP",
+    "Version": "T76 Ver. 01.25.00"
+  },
+  "Arch": "amd64",
+  "HwCap": "x86-64-v4",
+  "GPU": [
+    {
+      "Vendor": "8086",
+      "Model": "9a49"
+    }
+  ],
+  "RAM": 16,
+  "Partitions": [
+    100.2,
+    0.2
+  ],
+  "Screens": [
+    {
+      "Size": "344mmx194mm",
+      "Resolution": "1920x1080",
+      "Frequency": "60.00"
+    }
+  ],
+  "Autologin": false,
+  "LivePatch": false,
+  "Session": {
+    "DE": "ubuntu:GNOME",
+    "Name": "ubuntu",
+    "Type": "x11"
+  },
+  "Language": "pt_PT",
+  "Timezone": "Europe/Lisbon",
+  "Install": {
+    "Type": "Flutter",
+    "OEM": false,
+    "Media": "Ubuntu 24.04.5 LTS",
+    "Stages": {
+      "1": "locale",
+      "16": "accessibility",
+      "33": "keyboard",
+      "38": "network",
+      "49": "tryOrInstall",
+      "54": "autoinstall",
+      "59": "sourceSelection",
+      "68": "codecsAndDrivers",
+      "77": "storage",
+      "95": "identity",
+      "121": "timezone",
+      "154": "confirm",
+      "161": "install",
+      "394": "done"
+    },
+    "Language": "pt",
+    "Minimal": true,
+    "RestrictedAddons": false,
+    "PartitionMethod": "resize_use_free",
+    "UseActiveDirectory": false
+  }
+}

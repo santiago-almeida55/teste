@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="pt" xml:lang="pt">
+<head>
+    <title>42727-ALGAA | Slides | eLearning</title>
+    <link rel="icon" href="https://elearning.ua.pt/pluginfile.php/3/core_admin/favicon/64x64/1792578704/favicon-ua.svg">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, 42727-ALGAA | Slides | eLearning" />
+<link rel="stylesheet" type="text/css" href="https://elearning.ua.pt/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://elearning.ua.pt/theme/styles.php/adaptable/1792578704_1/all" />
+<link rel="stylesheet" type="text/css" href="https://elearning.ua.pt/filter/syntaxhighlighter/styles/atom-one-light.min.css" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/elearning.ua.pt","apibase":"https:\/\/elearning.ua.pt\/r.php\/api","homeurl":{},"sesskey":"3IHgUZMIx2","sessiontimeout":"28800","sessiontimeoutwarning":"1200","themerev":"1792578704","slasharguments":1,"theme":"adaptable","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1792578704","admin":"admin","svgicons":true,"usertimezone":"Europa\/London","language":"pt","courseId":444,"courseContextId":30330,"contextid":30390,"contextInstanceId":27027,"langrev":1793076607,"templaterev":"1792578704","siteId":1,"userId":63975,"deprecationignorelist":[],"traceId":null};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/elearning.ua.pt\/lib\/yuilib\/3.18.1\/","comboBase":"https:\/\/elearning.ua.pt\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/elearning.ua.pt\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/elearning.ua.pt\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/elearning.ua.pt\/theme\/yui_combo.php?m\/1792578704\/","combine":true,"comboBase":"https:\/\/elearning.ua.pt\/theme\/yui_combo.php?","ext":false,"root":"m\/1792578704\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form","datatype-date-format"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]}}},"gallery":{"name":"gallery","base":"https:\/\/elearning.ua.pt\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/elearning.ua.pt\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1792578704\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/elearning.ua.pt\/lib\/javascript.php\/1792578704\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/elearning.ua.pt\/lib\/javascript.php\/1792578704\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]}},"logInclude":[],"logExclude":[],"logLevel":null};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+<script type="importmap">{
+    "imports": {
+        "@moodle/lms/": "https://elearning.ua.pt/r.php/core/esm/1792578704/@moodle/lms/",
+        "@moodlehq/design-system": "https://elearning.ua.pt/r.php/core/esm/1792578704/@moodlehq/design-system",
+        "react": "https://elearning.ua.pt/r.php/core/esm/1792578704/react",
+        "react/": "https://elearning.ua.pt/r.php/core/esm/1792578704/react/",
+        "react-dom": "https://elearning.ua.pt/r.php/core/esm/1792578704/react-dom",
+        "react-dom/": "https://elearning.ua.pt/r.php/core/esm/1792578704/react-dom/"
+    }
+}</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="eLearning">
+    <meta name="twitter:title" content="42727-ALGAA | Slides | eLearning">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="42727-ALGAA | Slides | eLearning">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta name="og:site_name" content="eLearning">
+
+    <!-- Chrome, Firefox OS and Opera on Android topbar color -->
+    <meta name="theme-color" content="#fff">
+
+    <!-- Windows Phone topbar color -->
+    <meta name="msapplication-navbutton-color" content="#fff">
+
+    <!-- iOS Safari topbar color -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+</head><body  id="page-mod-folder-view" class="format-grid limitedwidth  path-mod path-mod-folder gecko dir-ltr lang-pt yui-skin-sam yui3-skin-sam elearning-ua-pt pagelayout-incourse course-444 context-30390 cmid-27027 cm-type-folder category-120 theme theme_adaptable two-column  fullin header-style1 showblockicons standard uses-drawers responsivesectionnav loggedin notguest"><div>
+    <a class="visually-hidden-focusable" href="#maincontent">Ir para o conteúdo principal</a>
+</div><script src="https://elearning.ua.pt/lib/javascript.php/1792578704/lib/polyfills/polyfill.js"></script>
+<script src="https://elearning.ua.pt/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.js"></script><script src="https://elearning.ua.pt/lib/javascript.php/1792578704/lib/javascript-static.js"></script>
+<script type="module">import "@moodle/lms/core/react_autoinit";</script><script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+<div id="page-wrapper"><div  class="drawer drawer-right d-none d-print-none not-initialized" data-region="fixed-drawer" id="theme_adaptable-drawers-courseindex" data-preference="drawer-open-index" data-state="show-drawer-right" data-forceopen="0" data-close-on-resize="0">
+    <div class="drawerheader">
+        <div class="drawerheading">
+            <div id="courseindexdrawerheading">
+    <a
+        class="courseindex-link text-truncate fw-bold"
+        href="https://elearning.ua.pt/course/view.php?id=444"
+        role="button"
+    >Álgebra Linear e Geometria Analítica - A</a>
+</div>
+
+        </div>
+        <div class="draweractions">
+            <div class="drawerheadercontent">
+                            <div id="courseindexdrawercontrols" class="dropdown">
+                <button class="btn btn-icon"
+                        id="courseindexdrawercontrolsmenubutton"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        title="Opções do índice da disciplina"
+                        aria-label="Opções do índice da disciplina"
+                        aria-controls="courseindexdrawercontrolsmenu">
+                    <i class="icon fa fa-angles-down fa-fw m-0" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end" role="menu" id="courseindexdrawercontrolsmenu" aria-labelledby="courseindexdrawercontrolsmenubutton">
+                    <a class="dropdown-item"
+                       href="#"
+                       data-action="expandallcourseindexsections"
+                       role="menuitem"
+                    >
+                        <i class="afaicon fa fa-angles-down fa-fw" aria-hidden="true"  ></i>
+                        Expandir tudo
+                    </a>
+                    <a class="dropdown-item"
+                       href="#"
+                       data-action="collapseallcourseindexsections"
+                       role="menuitem"
+                    >
+                        <span class="dir-rtl-hide"><i class="afaicon fa fa-angles-right fa-fw" aria-hidden="true"  ></i></span>
+                        <span class="dir-ltr-hide"><i class="afaicon fa fa-angles-left fa-fw" aria-hidden="true"  ></i></span>
+                        Contrair tudo
+                    </a>
+                </div>
+            </div>
+
+            </div>
+            <button
+                class="btn btn-icon icon-size-3 drawertoggle"
+                data-toggler="drawers"
+                data-action="closedrawer"
+                data-target="theme_adaptable-drawers-courseindex"
+                data-bs-toggle="tooltip"
+                data-bs-placement="left"
+                title="Fechar índice da UC"
+                aria-label="Fechar índice da UC"
+            >
+                    <i class="afaicon fa fa-xmark fa-fw" aria-hidden="true"  ></i>
+            </button>
+        </div>
+    </div>
+    <div class="drawercontent drag-container" data-usertour="scroller">
+                    <nav id="courseindex" class="courseindex">
+    <div id="courseindex-content">
+        <div data-region="loading-placeholder-content" aria-hidden="true" id="course-index-placeholder">
+            <ul class="placeholders list-unstyled px-5">
+                <li>
+                    <div class="col-md-6 p-0 d-flex align-items-center">
+                        <div class="bg-pulse-grey rounded-circle me-2"></div>
+                        <div class="bg-pulse-grey w-100"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="col-md-6 p-0 d-flex align-items-center">
+                        <div class="bg-pulse-grey rounded-circle me-2"></div>
+                        <div class="bg-pulse-grey w-100"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="col-md-6 p-0 d-flex align-items-center">
+                        <div class="bg-pulse-grey rounded-circle me-2"></div>
+                        <div class="bg-pulse-grey w-100"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="col-md-6 p-0 d-flex align-items-center">
+                        <div class="bg-pulse-grey rounded-circle me-2"></div>
+                        <div class="bg-pulse-grey w-100"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    </div>
+</div><div  class="drawer drawer-left show d-none d-print-none not-initialized" data-region="fixed-drawer" id="theme_adaptable-drawers-sidepost" data-preference="drawer-open-block" data-state="show-drawer-left" data-forceopen="" data-close-on-resize="1">
+    <div class="drawerheader">
+        <div class="drawerheading">
+            
+        </div>
+        <div class="draweractions">
+            <div class="drawerheadercontent">
+                
+            </div>
+            <button
+                class="btn btn-icon icon-size-3 drawertoggle"
+                data-toggler="drawers"
+                data-action="closedrawer"
+                data-target="theme_adaptable-drawers-sidepost"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Fechar painel dos blocos"
+                aria-label="Fechar painel dos blocos"
+            >
+                    <i class="afaicon fa fa-xmark fa-fw" aria-hidden="true"  ></i>
+            </button>
+        </div>
+    </div>
+    <div class="drawercontent drag-container" data-usertour="scroller">
+                    <section class="d-print-none" aria-label="Blocos">
+                <aside id="block-region-side-post" class="block-region" data-blockregion="side-post" data-droptarget="1"><h2 class="visually-hidden">Blocos</h2><a class="skip skip-block" id="fsb-1" href="#sb-1">Ignorar Navegação</a><section id="inst33" class="block_navigation block mb-3" role="navigation" data-block="navigation" data-instance-id="33" aria-labelledby="instance-33-header"><div class="header"><div id="instance-33-action" class="block-action block-collapsible" data-instance-id="33" title="Show / hide the block"></div><div class="title"><div class="block_action"></div><h2 class="d-inline" id="instance-33-header">Navegação</h2></div><div class="block-controls"></div></div><div class="content"><ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/nav_loader"><li class="type_unknown depth_1 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random6ae1193f80d462_group" data-collapsible="false" aria-labelledby="random6ae1193f80d461_label_1_1"><p class="tree_item branch navigation_node"><a tabindex="-1" id="random6ae1193f80d461_label_1_1" href="https://elearning.ua.pt/my/">Painel do utilizador</a></p><ul id="random6ae1193f80d462_group" role="group"><li class="type_setting depth_2 item_with_icon" role="treeitem" aria-labelledby="random6ae1193f80d463_label_2_2"><p class="tree_item hasicon"><a tabindex="-1" id="random6ae1193f80d463_label_2_2" href="https://elearning.ua.pt/?redirect=0"><i class="afaicon fa fa-house navicon fa-fw" aria-hidden="true"  ></i><span class="item-content-wrap">Página inicial do site</span></a></p></li><li class="type_course depth_2 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random6ae1193f80d465_group" aria-labelledby="random6ae1193f80d463_label_2_3"><p class="tree_item branch"><span tabindex="-1" id="random6ae1193f80d463_label_2_3" title="eLearning">Páginas do site</span></p><ul id="random6ae1193f80d465_group" role="group" aria-hidden="true"><li class="type_custom depth_3 item_with_icon" role="treeitem" aria-labelledby="random6ae1193f80d466_label_3_5"><p class="tree_item hasicon"><a tabindex="-1" id="random6ae1193f80d466_label_3_5" href="https://elearning.ua.pt/my/courses.php"><i class="afaicon anavigationitem far fa-circle fa-2xs align-middle navicon fa-fw" aria-hidden="true"  ></i><span class="item-content-wrap">Minhas disciplinas</span></a></p></li><li class="type_setting depth_3 item_with_icon" role="treeitem" aria-labelledby="random6ae1193f80d466_label_3_6"><p class="tree_item hasicon"><a tabindex="-1" id="random6ae1193f80d466_label_3_6" href="https://elearning.ua.pt/tag/search.php"><i class="afaicon anavigationitem far fa-circle fa-2xs align-middle navicon fa-fw" aria-hidden="true"  ></i><span class="item-content-wrap">Palavras-chave</span></a></p></li><li class="type_activity depth_3 item_with_icon" role="treeitem" aria-labelledby="random6ae1193f80d466_label_3_9"><p class="tree_item hasicon"><a tabindex="-1" id="random6ae1193f80d466_label_3_9" title="Fórum" href="https://elearning.ua.pt/mod/forum/view.php?id=350481"><img class="icon navicon" alt="Fórum" title="Fórum" src="https://elearning.ua.pt/theme/image.php/adaptable/forum/1792578704/monologo" /><span class="item-content-wrap">Site announcements</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random6ae1193f80d4610_group" aria-labelledby="random6ae1193f80d463_label_2_10"><p class="tree_item branch canexpand"><a tabindex="-1" id="random6ae1193f80d463_label_2_10" href="https://elearning.ua.pt/my/courses.php">Minhas disciplinas</a></p><ul id="random6ae1193f80d4610_group" role="group"><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_3429" data-node-key="3429" data-node-type="20" aria-labelledby="random6ae1193f80d4611_label_3_11"><p class="tree_item branch" id="expandable_branch_20_3429"><a tabindex="-1" id="random6ae1193f80d4611_label_3_11" title="Fundamentos de Programação " href="https://elearning.ua.pt/course/view.php?id=3429">40379-FP</a></p></li><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_2610" data-node-key="2610" data-node-type="20" aria-labelledby="random6ae1193f80d4611_label_3_12"><p class="tree_item branch" id="expandable_branch_20_2610"><a tabindex="-1" id="random6ae1193f80d4611_label_3_12" title="Introdução à Engenharia de Computadores e Informática" href="https://elearning.ua.pt/course/view.php?id=2610">43832-IECI</a></p></li><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_468" data-node-key="468" data-node-type="20" aria-labelledby="random6ae1193f80d4611_label_3_13"><p class="tree_item branch" id="expandable_branch_20_468"><a tabindex="-1" id="random6ae1193f80d4611_label_3_13" title="Cálculo I - C" href="https://elearning.ua.pt/course/view.php?id=468">42718-C-IC</a></p></li><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random6ae1193f80d4612_group" aria-labelledby="random6ae1193f80d4611_label_3_14"><p class="tree_item branch canexpand"><a tabindex="-1" id="random6ae1193f80d4611_label_3_14" title="Álgebra Linear e Geometria Analítica - A" href="https://elearning.ua.pt/course/view.php?id=444">42727-ALGAA</a></p><ul id="random6ae1193f80d4612_group" role="group"><li class="type_container depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random6ae1193f80d4614_group" aria-labelledby="random6ae1193f80d4613_label_4_15"><p class="tree_item branch"><a tabindex="-1" id="random6ae1193f80d4613_label_4_15" href="https://elearning.ua.pt/user/index.php?id=444">Participantes</a></p><ul id="random6ae1193f80d4614_group" role="group" aria-hidden="true"><li class="type_user depth_5 item_with_icon" role="treeitem" aria-labelledby="random6ae1193f80d4615_label_5_16"><p class="tree_item hasicon"><a tabindex="-1" id="random6ae1193f80d4615_label_5_16" href="https://elearning.ua.pt/user/view.php?id=63975&amp;course=444"><i class="afaicon anavigationitem far fa-circle fa-2xs align-middle navicon fa-fw" aria-hidden="true"  ></i><span class="item-content-wrap">SANTIAGO FERREIRA DE ALMEIDA 139931</span></a></p></li></ul></li><li class="type_setting depth_4 item_with_icon" role="treeitem" aria-labelledby="random6ae1193f80d4613_label_4_17"><p class="tree_item hasicon"><a tabindex="-1" id="random6ae1193f80d4613_label_4_17" href="https://elearning.ua.pt/admin/tool/lp/coursecompetencies.php?courseid=444"><i class="afaicon fa fa-list-check navicon fa-fw" aria-hidden="true"  ></i><span class="item-content-wrap">Competências</span></a></p></li><li class="type_setting depth_4 item_with_icon" role="treeitem" aria-labelledby="random6ae1193f80d4613_label_4_18"><p class="tree_item hasicon"><a tabindex="-1" id="random6ae1193f80d4613_label_4_18" href="https://elearning.ua.pt/grade/report/index.php?id=444"><i class="afaicon fa fa-clipboard-check navicon fa-fw" aria-hidden="true"  ></i><span class="item-content-wrap">Pauta</span></a></p></li><li class="type_container depth_4 item_with_icon" role="treeitem" aria-labelledby="random6ae1193f80d4613_label_4_19"><p class="tree_item hasicon"><a tabindex="-1" id="random6ae1193f80d4613_label_4_19" href="https://elearning.ua.pt/course/overview.php?id=444"><i class="afaicon fa fa-info navicon fa-fw" aria-hidden="true"  ></i><span class="item-content-wrap">Atividades</span></a></p></li><li class="type_structure depth_4 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_4728" data-node-key="4728" data-node-type="30" aria-labelledby="random6ae1193f80d4613_label_4_20"><p class="tree_item branch" id="expandable_branch_30_4728"><a tabindex="-1" id="random6ae1193f80d4613_label_4_20" href="https://elearning.ua.pt/course/section.php?id=4728">Geral</a></p></li><li class="type_structure depth_4 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_4734" data-node-key="4734" data-node-type="30" aria-labelledby="random6ae1193f80d4613_label_4_21"><p class="tree_item branch" id="expandable_branch_30_4734"><a tabindex="-1" id="random6ae1193f80d4613_label_4_21" href="https://elearning.ua.pt/course/section.php?id=4734">Informações</a></p></li><li class="type_structure depth_4 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random6ae1193f80d4620_group" aria-labelledby="random6ae1193f80d4613_label_4_22"><p class="tree_item branch"><a tabindex="-1" id="random6ae1193f80d4613_label_4_22" href="https://elearning.ua.pt/course/section.php?id=4743">Material de apoio</a></p><ul id="random6ae1193f80d4620_group" role="group"><li class="type_activity depth_5 item_with_icon current_branch" role="treeitem" aria-labelledby="random6ae1193f80d4621_label_5_23"><p class="tree_item hasicon active_tree_node"><a tabindex="-1" id="random6ae1193f80d4621_label_5_23" title="Pasta" href="https://elearning.ua.pt/mod/folder/view.php?id=27027"><img class="icon navicon" alt="Pasta" title="Pasta" src="https://elearning.ua.pt/theme/image.php/adaptable/folder/1792578704/monologo" /><span class="item-content-wrap">Slides</span></a></p></li><li class="type_activity depth_5 item_with_icon" role="treeitem" aria-labelledby="random6ae1193f80d4621_label_5_24"><p class="tree_item hasicon"><a tabindex="-1" id="random6ae1193f80d4621_label_5_24" title="Pasta" href="https://elearning.ua.pt/mod/folder/view.php?id=27039"><img class="icon navicon" alt="Pasta" title="Pasta" src="https://elearning.ua.pt/theme/image.php/adaptable/folder/1792578704/monologo" /><span class="item-content-wrap">Folhas teórico-práticas</span></a></p></li><li class="type_activity depth_5 item_with_icon" role="treeitem" aria-labelledby="random6ae1193f80d4621_label_5_25"><p class="tree_item hasicon"><a tabindex="-1" id="random6ae1193f80d4621_label_5_25" title="URL" href="https://elearning.ua.pt/mod/url/view.php?id=27060"><img class="icon navicon" alt="URL" title="URL" src="https://elearning.ua.pt/theme/image.php/adaptable/url/1792578704/monologo" /><span class="item-content-wrap">Canal Educast - Álgebra Linear e Geometria Analítica</span></a></p></li></ul></li><li class="type_structure depth_4 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_30_4764" data-node-key="4764" data-node-type="30" aria-labelledby="random6ae1193f80d4613_label_4_27"><p class="tree_item branch" id="expandable_branch_30_4764"><a tabindex="-1" id="random6ae1193f80d4613_label_4_27" href="https://elearning.ua.pt/course/section.php?id=4764">Testes e exames</a></p></li></ul></li><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_5550" data-node-key="5550" data-node-type="20" aria-labelledby="random6ae1193f80d4611_label_3_28"><p class="tree_item branch" id="expandable_branch_20_5550"><a tabindex="-1" id="random6ae1193f80d4611_label_3_28" title="Introdução aos Sistemas Digitais" href="https://elearning.ua.pt/course/view.php?id=5550">40332-ISD</a></p></li></ul></li></ul></li></ul></div></section><span class="skip-block-to" id="sb-1"></span><a class="skip skip-block" id="fsb-2" href="#sb-2">Ignorar Administração</a><section id="inst36" class="block_settings block mb-3" role="navigation" data-block="settings" data-instance-id="36" aria-labelledby="instance-36-header"><div class="header"><div id="instance-36-action" class="block-action block-collapsible" data-instance-id="36" title="Show / hide the block"></div><div class="title"><div class="block_action"></div><h2 class="d-inline" id="instance-36-header">Administração</h2></div><div class="block-controls"></div></div><div class="content"><div id="settingsnav" class="box block_tree_box"><ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/site_admin_loader"><li class="type_course depth_1 contains_branch" tabindex="-1" role="treeitem" aria-expanded="false" aria-owns="random6ae1193f80d4626_group"><p class="tree_item root_node tree_item branch"><span tabindex="0">Administração da UC</span></p><ul id="random6ae1193f80d4626_group" role="group" aria-hidden="true"><li class="type_setting depth_2 item_with_icon" tabindex="-1" role="treeitem"><p class="tree_item hasicon tree_item leaf"><a href="https://elearning.ua.pt/course/downloadcontent.php?contextid=30330" id="action_link6ae1193f80d4625" class=""  data-downloadcourse="1"  data-download-body="Está prestes a descarregar um arquivo Zip com o conteúdo da disciplina (estão excluídos os itens que não podem ser descarregados e quaisquer ficheiros maiores do que 100.0 MB)."  data-download-button-text="Descarregar"  data-download-link="https://elearning.ua.pt/course/downloadcontent.php?contextid=30330&amp;download=1"  data-download-title="Descarregar o conteúdo da disciplina"  data-overrides-tree-activation-key-handler="1" ><i class="afaicon fa fa-download navicon fa-fw" aria-hidden="true"  ></i>Descarregar o conteúdo da disciplina</a></p></li></ul></li></ul></div></div></section><span class="skip-block-to" id="sb-2"></span></aside>
+            </section>
+
+    </div>
+</div><header id="adaptable-page-header-wrapper">
+    <div id="header1" class="above-header">
+        <div class="container">
+            <nav class="navbar navbar-expand btco-hover-menu">
+                <button class="navbar-toggler nav-link aabtn d-block d-lg-none px-1 my-1 border-0" data-toggler="drawers" data-action="toggle" data-target="theme_adaptable-drawers-primary">
+                    <i aria-hidden="true" class="fa fa-bars afaicon fa-fw"></i>
+                    <span class="visually-hidden">Painel lateral</span>
+                </button>
+
+                <div class="collapse navbar-collapse">
+                
+                    <ul id="adaptable-user-nav" class="navbar-nav ms-auto my-auto">
+                        
+
+                        <li class="nav-item navbarsearchsocial me-1 me-lg-0 my-auto d-md-block d-lg-none my-auto">
+                            <div id="searchinput-navbar-6ae1193f8b1d56ae1193f80d4642" class="simplesearchform adsimplesearchform">
+    <div class="collapse" id="searchform-navbar-6ae1193f8b1d56ae1193f80d4642">
+        <form autocomplete="off" action="https://elearning.ua.pt/course/search.php" method="get" accept-charset="utf-8" class="mform d-flex flex-wrap align-items-center searchform-navbar">
+                <input type="hidden" name="context" value="30390">
+            <div class="input-group">
+                <input type="text"
+                    id="searchinput-6ae1193f8b1d56ae1193f80d4642"
+                    class="form-control withclear"
+                    placeholder="Course search"
+                    aria-label="Course search"
+                    name="q"
+                    data-region="input"
+                    autocomplete="off"
+                >
+                <label for="searchinput-6ae1193f8b1d56ae1193f80d4642">
+                    <span class="visually-hidden">Course search</span>
+                </label>
+                <button class="btn btn-close adsimplesearchclose"
+                    data-action="closesearch"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#searchform-navbar-6ae1193f8b1d56ae1193f80d4642"
+                    type="button"
+                >
+                    <i class="afaicon fa fa-xmark fa-fw" aria-hidden="true"  ></i>
+                    <span class="visually-hidden">Fechar</span>
+                </button>
+                <button type="submit" class="btn btn-submit" data-action="submit">
+                    <i class="afaicon fa fa-magnifying-glass fa-fw" aria-hidden="true"  ></i>
+                    <span class="visually-hidden">Course search</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    <button
+        class="rounded-0 nav-link icon-no-margin"
+        data-bs-toggle="collapse"
+        data-bs-target="#searchform-navbar-6ae1193f8b1d56ae1193f80d4642"
+        data-action="opensearch"
+        type="button"
+        aria-expanded="false"
+        aria-controls="searchform-navbar-6ae1193f8b1d56ae1193f80d4642"
+        title="Alternar a entrada da pesquisa"
+    >
+        <i class="afaicon fa fa-magnifying-glass fa-fw" aria-hidden="true"  ></i>
+        <span class="visually-hidden">Alternar a entrada da pesquisa</span>
+    </button>
+</div>
+                        </li>
+
+                        <li id="nav-popover-container" class="my-auto me-1 me-lg-0 d-flex">
+                            <div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="63975"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link icon-no-margin"
+        data-region="popover-region-toggle"
+        aria-controls="popover-region-container-6ae1193f8cb036ae1193f80d4644"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-label="  Mostrar janela da notificação com 38 notificações novas  "
+        title="  Mostrar janela da notificação com 38 notificações novas  "
+        tabindex="0"
+        role="button">
+                <i class="afaicon fa fa-bell fa-fw" aria-hidden="true"  ></i>
+        <div
+            class="count-container "
+            data-region="count-container"
+            aria-hidden=true
+        >
+            38
+        </div>
+
+    </div>
+    <div         aria-modal="true"
+        tabindex="-1"
+
+        id="popover-region-container-6ae1193f8cb036ae1193f80d4644"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-hidden="true"
+        aria-label="Janela da notificação"
+        role="dialog">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notificações</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button btn btn-sm btn-link m-0 py-0 icon-no-margin"
+           href="#"
+           title="Marcar todas como lidas"
+           data-action="mark-all-read"
+           role="button"
+           aria-label="Marcar todas como lidas">
+            <span class="normal-icon"><i class="afaicon fa fa-check fa-fw" aria-hidden="true"  ></i></span>
+            <span class="loading-icon icon-no-margin ">
+                <i class="afaicon fa fa-spinner fa-spin fa-fw"  title="A carregar" role="img" aria-label="A carregar"></i>
+            </span>
+            <span aria-live="polite" class="visually-hidden" data-region="notification-read-feedback"></span>
+        </a>
+            <a href="https://elearning.ua.pt/message/notificationpreferences.php"
+               title="Preferências das notificações"
+               aria-label="Preferências das notificações"
+               class="btn btn-sm btn-link m-0 py-0 icon-no-margin" >
+                <i class="afaicon fa fa-gear fa-fw" aria-hidden="true"  ></i></a>
+        <button type="button" class="btn btn-sm btn-link m-0 py-0 icon-no-margin" aria-label="Fechar" title="Fechar" data-action="close-notification-popover">
+            <i class="afaicon fa fa-xmark fa-fw" aria-hidden="true"  ></i>
+        </button>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">Não tem notificações</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin ">
+                <i class="afaicon fa fa-spinner fa-spin fa-fw"  title="A carregar" role="img" aria-label="A carregar"></i>
+            </span>
+        </div>
+                <a class="see-all-link"
+                    href="https://elearning.ua.pt/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Ver todas</div>
+                    </div>
+                </a>
+    </div>
+</div>
+                        </li>
+
+                        
+
+                        
+
+                        <li class="nav-item me-1 me-lg-0 dropdown"><div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items" id="action-menu-0" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-0-menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a
+                            href="#"
+                            tabindex="0"
+                            class="nav-link dropdown-toggle icon-no-margin"
+                            id="action-menu-toggle-0"
+                            aria-label="Menu do utilizador"
+                            data-bs-toggle="dropdown"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            aria-controls="action-menu-0-menu"
+                        >
+                            
+                            <span class="userbutton"><span class="usertext me-1">SANTIAGO FERREIRA DE ALMEIDA 139931</span><span class="avatars"><span class="avatar current"><span class="userinitials size-35" title="SANTIAGO FERREIRA DE ALMEIDA 139931" aria-label="SANTIAGO FERREIRA DE ALMEIDA 139931" role="img">S1</span></span></span></span>
+                                
+                            <b class="caret"></b>
+                        </a>
+                            <div class="dropdown-menu menu dropdown-menu-end" id="action-menu-0-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-0" role="menu">
+                                                                <a href="https://elearning.ua.pt/my" class="dropdown-item menu-action" role="menuitem" tabindex="-1" >
+                                <span class="menu-action-text"><i aria-hidden="true" class="fa fa-dashboard afaicon fa-fw"></i>Painel do utilizador</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://elearning.ua.pt/user/profile.php" class="dropdown-item menu-action" role="menuitem" tabindex="-1" >
+                                <span class="menu-action-text"><i aria-hidden="true" class="fa fa-user afaicon fa-fw"></i>Ver perfil</span>
+                        </a>
+                                                                <a href="https://elearning.ua.pt/user/edit.php" class="dropdown-item menu-action" role="menuitem" tabindex="-1" >
+                                <span class="menu-action-text"><i aria-hidden="true" class="fa fa-cog afaicon fa-fw"></i>Editar perfil</span>
+                        </a>
+                                                                <a href="https://elearning.ua.pt/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" tabindex="-1" >
+                                <span class="menu-action-text"><i aria-hidden="true" class="fa fa-list-alt afaicon fa-fw"></i>Pauta</span>
+                        </a>
+                                                                <a href="https://elearning.ua.pt/user/preferences.php" class="dropdown-item menu-action" role="menuitem" tabindex="-1" >
+                                <span class="menu-action-text"><i aria-hidden="true" class="fa fa-cog afaicon fa-fw"></i>Preferências</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://elearning.ua.pt/calendar/view.php" class="dropdown-item menu-action" role="menuitem" tabindex="-1" >
+                                <span class="menu-action-text"><i aria-hidden="true" class="fa fa-calendar afaicon fa-fw"></i>Calendário</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://elearning.ua.pt/user/profile.php" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" tabindex="-1" >
+                                <span class="menu-action-text">Perfil</span>
+                        </a>
+                                                                <a href="https://elearning.ua.pt/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" tabindex="-1" >
+                                <span class="menu-action-text">Pauta</span>
+                        </a>
+                                                                <a href="https://elearning.ua.pt/calendar/view.php?view=month" class="dropdown-item menu-action" role="menuitem" data-title="calendar,core_calendar" tabindex="-1" >
+                                <span class="menu-action-text">Calendário</span>
+                        </a>
+                                                                <a href="https://elearning.ua.pt/user/files.php" class="dropdown-item menu-action" role="menuitem" data-title="privatefiles,moodle" tabindex="-1" >
+                                <span class="menu-action-text">Ficheiros privados</span>
+                        </a>
+                                                                <a href="https://elearning.ua.pt/reportbuilder/index.php" class="dropdown-item menu-action" role="menuitem" data-title="reports,core_reportbuilder" tabindex="-1" >
+                                <span class="menu-action-text">Relatórios</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://elearning.ua.pt/login/logout.php?sesskey=3IHgUZMIx2" class="dropdown-item menu-action" role="menuitem" tabindex="-1" >
+                                <span class="menu-action-text"><i aria-hidden="true" class="fa fa-sign-out afaicon fa-fw"></i>Sair</span>
+                        </a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></div></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div id="page-header" class="main-header-row d-none d-lg-flex">
+        <div class="container">
+            <div class="row d-flex justify-content-start align-items-center h-100">
+                <div class="col-lg-8 p-0">
+                    <div class="bd-highlight d-flex">
+                        <div class="pb-2 pe-3 pt-2 bd-highlight d-none d-lg-inline-block"><img src=//elearning.ua.pt/pluginfile.php/3/theme_adaptable/logo/1792578704/logo-ua.png id="logo" alt="Logo"></div>
+                        <div id="headertitle" class="bd-highlight pt-2 d-none d-lg-inline-block"><h1><span id="coursetitle">Álgebra Linear e Geometria Analítica - A</span></h1></div>
+                    </div>
+                    <div id="course-header">
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-end">
+                        <div class="headersearch pagelayoutoriginal d-none d-lg-inline-block">
+    <div id="searchinput-navbar-6ae1193f8b3ce6ae1193f80d4643" class="simplesearchform adsimplesearchform">
+    <div class="collapse" id="searchform-navbar-6ae1193f8b3ce6ae1193f80d4643">
+        <form autocomplete="off" action="https://elearning.ua.pt/course/search.php" method="get" accept-charset="utf-8" class="mform d-flex flex-wrap align-items-center searchform-navbar">
+                <input type="hidden" name="context" value="30390">
+            <div class="input-group">
+                <input type="text"
+                    id="searchinput-6ae1193f8b3ce6ae1193f80d4643"
+                    class="form-control withclear"
+                    placeholder="Course search"
+                    aria-label="Course search"
+                    name="q"
+                    data-region="input"
+                    autocomplete="off"
+                >
+                <label for="searchinput-6ae1193f8b3ce6ae1193f80d4643">
+                    <span class="visually-hidden">Course search</span>
+                </label>
+                <button class="btn btn-close adsimplesearchclose"
+                    data-action="closesearch"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#searchform-navbar-6ae1193f8b3ce6ae1193f80d4643"
+                    type="button"
+                >
+                    <i class="afaicon fa fa-xmark fa-fw" aria-hidden="true"  ></i>
+                    <span class="visually-hidden">Fechar</span>
+                </button>
+                <button type="submit" class="btn btn-submit" data-action="submit">
+                    <i class="afaicon fa fa-magnifying-glass fa-fw" aria-hidden="true"  ></i>
+                    <span class="visually-hidden">Course search</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    <button
+        class="rounded-0 nav-link icon-no-margin"
+        data-bs-toggle="collapse"
+        data-bs-target="#searchform-navbar-6ae1193f8b3ce6ae1193f80d4643"
+        data-action="opensearch"
+        type="button"
+        aria-expanded="false"
+        aria-controls="searchform-navbar-6ae1193f8b3ce6ae1193f80d4643"
+        title="Alternar a entrada da pesquisa"
+    >
+        <i class="afaicon fa fa-magnifying-glass fa-fw" aria-hidden="true"  ></i>
+        <span class="visually-hidden">Alternar a entrada da pesquisa</span>
+    </button>
+</div>
+</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        <div id="main-navbar" class="d-none d-lg-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="navbar navbar-expand btco-hover-menu">
+                            <nav aria-label="Site links">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a title="Início" class="nav-link" href="https://elearning.ua.pt/?redirect=0"><i aria-hidden="true" class="fa-lg fa fa-home afaicon fa-fw"></i><span class="menutitle">Início</span></a></li><li class="nav-item"><a title="Painel do utilizador" class="nav-link" href="https://elearning.ua.pt/my/index.php"><i aria-hidden="true" class="fa-lg fa fa-dashboard afaicon fa-fw"></i><span class="menutitle">Painel do utilizador</span></a></li><li class="nav-item"><a title="UC" class="nav-link" href="https://elearning.ua.pt/my/courses.php"><i aria-hidden="true" class="fa-lg fa fa-th afaicon fa-fw"></i><span class="menutitle">UC</span></a></li><li class="nav-item"><a title="Eventos" class="nav-link" href="https://elearning.ua.pt/calendar/view.php"><i aria-hidden="true" class="fa-lg fa fa-calendar afaicon fa-fw"></i><span class="menutitle">Eventos</span></a></li><li class="nav-item dropdown my-auto main-navigation"><a href="https://elearning.ua.pt/mod/folder/view.php?id=27027" class="nav-link dropdown-toggle my-auto" role="button" id="main-navigation1" aria-haspopup="true" aria-expanded="false" aria-controls="dropdownmain-navigation1" data-target="https://elearning.ua.pt/mod/folder/view.php?id=27027" data-bs-toggle="dropdown" title="Disciplina atual"><i aria-hidden="true" class="fa-lg fa fa-sitemap afaicon fa-fw"></i><span class="menutitle">Disciplina atual</span></a><ul role="menu" class="dropdown-menu" id="dropdownmain-navigation1" aria-labelledby="main-navigation1"><li><a title="Participantes" class="dropdown-item" href="https://elearning.ua.pt/user/index.php?id=444"><i aria-hidden="true" class="fa fa-users afaicon fa-fw"></i><span class="menutitle">Participantes</span></a></li><li><a title="Pauta" class="dropdown-item" href="https://elearning.ua.pt/grade/report/index.php?id=444"><i class="afaicon fa fa-clipboard-check fa-fw"  title="Pauta" role="img" aria-label="Pauta"></i><span class="menutitle">Pauta</span></a></li><li><a title="Fóruns" class="dropdown-item" href="https://elearning.ua.pt/mod/forum/index.php?id=444"><i aria-hidden="true" class="fa-solid fa-people-group afaicon fa-fw"></i><span class="menutitle">Fóruns</span></a></li><li><a title="Recursos" class="dropdown-item" href="https://elearning.ua.pt/course/resources.php?id=444"><i aria-hidden="true" class="fa-solid fa-file-lines afaicon fa-fw"></i><span class="menutitle">Recursos</span></a></li><li class="nav-item dropdown my-auto main-navigation1"><a href="#" class="nav-link dropdown-toggle my-auto" role="button" id="main-navigation12" aria-haspopup="true" aria-expanded="false" aria-controls="dropdownmain-navigation12" data-target="#" data-bs-toggle="dropdown" title="Secções"><i aria-hidden="true" class="icon fa-lg fa fa-list-ol afaicon fa-fw"></i><span class="menutitle">Secções</span></a><ul role="menu" class="dropdown-menu" id="dropdownmain-navigation12" aria-labelledby="main-navigation12"><li><a title="Geral" class="dropdown-item" href="https://elearning.ua.pt/course/view.php?id=444#section-0">Geral</a></li><li><a title="Informações" class="dropdown-item" href="https://elearning.ua.pt/course/view.php?id=444#section-1">Informações</a></li><li><a title="Material de apoio" class="dropdown-item" href="https://elearning.ua.pt/course/view.php?id=444#section-2">Material de apoio</a></li><li><a title="Testes e exames" class="dropdown-item" href="https://elearning.ua.pt/course/view.php?id=444#section-3">Testes e exames</a></li></ul></li></ul></li>
+                                </ul>
+                            </nav>
+        
+                            <ul class="navbar-nav ms-auto d-flex flex-wrap">
+        
+        
+                                <li class="nav-item mx-0 hbll">
+                                    <a class="nav-link moodlewidth" href="javascript:void(0);" title="Ecrã completo">
+                                        <i class="afaicon fa fa-expand fa-lg" aria-hidden="true"></i>
+                                        <span class="zoomdesc">Ecrã completo</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-0 sbll">
+                                    <a class="nav-link moodlewidth" href="javascript:void(0);" title="Exibição padrão">
+                                        <i class="afaicon fa fa-compress fa-lg" aria-hidden="true"></i>
+                                        <span class="zoomdesc">Exibição padrão</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</header>
+
+
+<div  class="drawer drawer-left drawer-primary d-print-none not-initialized" data-region="fixed-drawer" id="theme_adaptable-drawers-primary" data-preference="" data-state="show-drawer-primary" data-forceopen="0" data-close-on-resize="1">
+    <div class="drawerheader">
+        <div class="drawerheading">
+                        
+
+        </div>
+        <div class="draweractions">
+            <div class="drawerheadercontent">
+                
+            </div>
+            <button
+                class="btn btn-icon icon-size-3 drawertoggle"
+                data-toggler="drawers"
+                data-action="closedrawer"
+                data-target="theme_adaptable-drawers-primary"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Fechar painel"
+                aria-label="Fechar painel"
+            >
+                    <i class="afaicon fa fa-xmark fa-fw" aria-hidden="true"  ></i>
+            </button>
+        </div>
+    </div>
+    <div class="drawercontent drag-container" data-usertour="scroller">
+                <div class="list-group">
+                <a href="https://elearning.ua.pt/?redirect=0" class="list-group-item list-group-item-action" >
+                    <i aria-hidden="true" class="fa-lg fa fa-home afaicon fa-fw"></i><span class="menutitle">Início</span>
+                </a>
+                <a href="https://elearning.ua.pt/my/index.php" class="list-group-item list-group-item-action" >
+                    <i aria-hidden="true" class="fa-lg fa fa-dashboard afaicon fa-fw"></i><span class="menutitle">Painel do utilizador</span>
+                </a>
+                <a href="https://elearning.ua.pt/my/courses.php" class="list-group-item list-group-item-action" >
+                    <i aria-hidden="true" class="fa-lg fa fa-th afaicon fa-fw"></i><span class="menutitle">UC</span>
+                </a>
+                <a href="https://elearning.ua.pt/calendar/view.php" class="list-group-item list-group-item-action" >
+                    <i aria-hidden="true" class="fa-lg fa fa-calendar afaicon fa-fw"></i><span class="menutitle">Eventos</span>
+                </a>
+                <a id="drop-down-10002" href="#" class="list-group-item list-group-item-action icons-collapse-expand collapsed d-flex" data-bs-toggle="collapse" data-bs-target="#drop-down-menu-10002" aria-expanded="false" aria-controls="drop-down-menu-10002">
+                    <i aria-hidden="true" class="fa-lg fa fa-sitemap afaicon fa-fw"></i><span class="menutitle">Disciplina atual</span>
+                    <span class="ms-auto expanded-icon icon-no-margin mx-2">
+                        <i class="afaicon fa fa-chevron-down fa-fw" aria-hidden="true"  ></i>
+                        <span class="visually-hidden">
+                            Contrair
+                        </span>
+                    </span>
+                    <span class="ms-auto collapsed-icon icon-no-margin mx-2">
+                        <i class="afaicon fa fa-chevron-right fa-fw" aria-hidden="true"  ></i>
+                        <span class="visually-hidden">
+                            Expandir
+                        </span>
+                    </span>
+                </a>
+                <div class="collapse list-group-item p-0 border-0" role="menu" id="drop-down-menu-10002" aria-labelledby="drop-down-10002">
+                            <a id="drop-down-100003" href="#" class="list-group-item list-group-item-action icons-collapse-expand collapsed d-flex" data-bs-toggle="collapse" data-bs-target="#drop-down-menu-100003" aria-expanded="false" aria-controls="drop-down-menu-100003">
+                                Secções
+                                <span class="ms-auto expanded-icon icon-no-margin mx-2">
+                                    <i class="afaicon fa fa-chevron-down fa-fw" aria-hidden="true"  ></i>
+                                    <span class="visually-hidden">
+                                        Contrair
+                                    </span>
+                                </span>
+                                <span class="ms-auto collapsed-icon icon-no-margin mx-2">
+                                    <i class="afaicon fa fa-chevron-right fa-fw" aria-hidden="true"  ></i>
+                                    <span class="visually-hidden">
+                                        Expandir
+                                    </span>
+                                </span>
+                            </a>
+                            <div class="collapse list-group-item p-0 border-0" role="menu" id="drop-down-menu-100003" aria-labelledby="drop-down-100003">
+                                    <a href="https://elearning.ua.pt/course/view.php?id=444#section-0" class="ps-5 bg-light list-group-item list-group-item-action">Geral</a>
+                                    <a href="https://elearning.ua.pt/course/view.php?id=444#section-1" class="ps-5 bg-light list-group-item list-group-item-action">Informações</a>
+                                    <a href="https://elearning.ua.pt/course/view.php?id=444#section-2" class="ps-5 bg-light list-group-item list-group-item-action">Material de apoio</a>
+                                    <a href="https://elearning.ua.pt/course/view.php?id=444#section-3" class="ps-5 bg-light list-group-item list-group-item-action">Testes e exames</a>
+                            </div>
+                            <a href="https://elearning.ua.pt/user/index.php?id=444" class="list-group-item list-group-item-action" >
+                                Participantes
+                            </a>
+                            <a href="https://elearning.ua.pt/grade/report/index.php?id=444" class="list-group-item list-group-item-action" >
+                                Pauta
+                            </a>
+                            <a href="https://elearning.ua.pt/mod/forum/index.php?id=444" class="list-group-item list-group-item-action" >
+                                Fóruns
+                            </a>
+                            <a href="https://elearning.ua.pt/course/resources.php?id=444" class="list-group-item list-group-item-action" >
+                                Recursos
+                            </a>
+                </div>
+        </div>
+
+    </div>
+</div><div id="page" class="drawers"><div class="drawer-toggles d-flex">
+    <div class="drawer-toggler drawer-right-toggle open-nav d-print-none">
+        <button
+            class="btn icon-no-margin"
+            data-toggler="drawers"
+            data-action="toggle"
+            data-target="theme_adaptable-drawers-courseindex"
+            data-bs-toggle="tooltip"
+            data-bs-placement="left"
+            title="Abrir índice da disciplina"
+        >
+        <span class="visually-hidden">Abrir índice da disciplina</span>
+            <span class="dir-ltr-hide"><img class="icon" alt="" aria-hidden="true" src="https://elearning.ua.pt/theme/image.php/adaptable/core/1792578704/e/sidebar_left" /></span>
+            <span class="dir-rtl-hide"><img class="icon" alt="" aria-hidden="true" src="https://elearning.ua.pt/theme/image.php/adaptable/core/1792578704/e/sidebar_right" /></span>
+        </button>
+    </div>
+</div><div class="drawer-toggles d-flex">
+    <div class="drawer-toggler drawer-left-toggle ms-auto d-print-none">
+        <button
+            class="btn icon-no-margin"
+            data-toggler="drawers"
+            data-action="toggle"
+            data-target="theme_adaptable-drawers-sidepost"
+            data-bs-toggle="tooltip"
+            data-bs-placement="left"
+            title="Abrir painel dos blocos"
+        >
+            <span class="visually-hidden">Abrir painel dos blocos</span>
+            <span class="dir-ltr-hide"><img class="icon" alt="" aria-hidden="true" src="https://elearning.ua.pt/theme/image.php/adaptable/core/1792578704/e/sidebar_right" /></span>
+            <span class="dir-rtl-hide"><img class="icon" alt="" aria-hidden="true" src="https://elearning.ua.pt/theme/image.php/adaptable/core/1792578704/e/sidebar_left" /></span>
+        </button>
+    </div>
+</div><div id="maincontainer" class="container outercont"><div class="row">
+    <div id="page-second-header" class="col-12 pt-3 pb-3">
+        <div class="d-flex flex-fill flex-wrap align-items-center">
+            <div id="page-navbar" class="me-auto d-none d-md-flex">
+                <nav role="navigation" aria-label="Breadcrumb"><ol class="breadcrumb align-items-center d-none d-md-flex"><li><a href="https://elearning.ua.pt/"><i aria-hidden="true" class="fa-lg fa fa-home afaicon fa-fw"></i></a></li><li><i aria-hidden="true" class="separator fa fa-angle-right afaicon fa-fw"></i><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://elearning.ua.pt/my/courses.php"><span itemprop="title">Minhas disciplinas</span></a></span></li><li><i aria-hidden="true" class="separator fa fa-angle-right afaicon fa-fw"></i><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" title="Álgebra Linear e Geometria Analítica - A" href="https://elearning.ua.pt/course/view.php?id=444"><span itemprop="title">42727-ALGAA</span></a></span></li><li><i aria-hidden="true" class="separator fa fa-angle-right afaicon fa-fw"></i><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://elearning.ua.pt/course/section.php?id=4743"><span itemprop="title">Material de apoio</span></a></span></li><li><i aria-hidden="true" class="separator fa fa-angle-right afaicon fa-fw"></i><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" title="Pasta" aria-current="page" href="https://elearning.ua.pt/mod/folder/view.php?id=27027"><span itemprop="title">Slides</span></a></span></li></ol></nav>
+            </div>
+            <div class="header-actions-container ms-auto" data-region="header-actions-container">
+            </div>
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="me-auto d-flex flex-column">
+            </div>
+        </div>
+    </div>
+</div><div id="page-content" class="row"><div id="region-main-box" class="col-12"><section id="region-main"><span class="notifications" id="user-notifications"></span><span id="maincontent"></span>
+    <h2>Slides</h2>
+<div class="activity-header" data-for="page-activity-header">
+        <div data-region="activity-information" data-activityname="Slides" class="activity-information">
+    <div data-region="activity-details" class="activity-details">
+    </div>
+</div>
+    </div><div role="main"><div class="flex-fill description-inner text-break">
+    
+        <div class="container-fluid">
+            <div class="d-flex">
+                    <div class="navitem ms-auto">
+                        <form method="get" action="https://elearning.ua.pt/mod/folder/download_folder.php" >
+                                <input type="hidden" name="id" value="27027">
+                            <button type="submit" class="btn btn-secondary"
+                                id="single_button6ae1193f80d4645"
+                                
+                                
+                                >Descarregar pasta</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    <div class="box generalbox pt-0 pb-3">
+        <div id="folder_tree0" class="filemanager">
+                <ul class="foldertree" role="tree" tabindex="0">
+                    <li role="treeitem" tabindex="-1" aria-expanded="true">
+                        
+                        <p>
+                            <img class="icon" alt="" aria-hidden="true" src="https://elearning.ua.pt/theme/image.php/adaptable/core/1792578704/f/folder" />
+                        
+                                 <span class="visually-hidden">Diretório de nível superior</span>
+                        </p>
+                            <ul role="group">
+                                    <li role="treeitem" tabindex="-1" >
+                                        
+                                        <p>
+                                            <img class="icon" alt="" aria-hidden="true" src="https://elearning.ua.pt/theme/image.php/adaptable/core/1792578704/f/pdf" />
+                                        
+                                                <a href="https://elearning.ua.pt/pluginfile.php/30390/mod_folder/content/0/Cap1-1-Matrizes%20e%20Sistemas.pdf?forcedownload=1">Cap1-1-Matrizes e Sistemas.pdf</a>
+                                        </p>
+                                    </li>
+                                    <li role="treeitem" tabindex="-1" >
+                                        
+                                        <p>
+                                            <img class="icon" alt="" aria-hidden="true" src="https://elearning.ua.pt/theme/image.php/adaptable/core/1792578704/f/pdf" />
+                                        
+                                                <a href="https://elearning.ua.pt/pluginfile.php/30390/mod_folder/content/0/Cap1-2-DecomposicaoLUeLDU.pdf?forcedownload=1">Cap1-2-DecomposicaoLUeLDU.pdf</a>
+                                        </p>
+                                    </li>
+                                    <li role="treeitem" tabindex="-1" >
+                                        
+                                        <p>
+                                            <img class="icon" alt="" aria-hidden="true" src="https://elearning.ua.pt/theme/image.php/adaptable/core/1792578704/f/pdf" />
+                                        
+                                                <a href="https://elearning.ua.pt/pluginfile.php/30390/mod_folder/content/0/Cap2-1%20-%20Espa%C3%A7os%20Vetoriais.pdf?forcedownload=1">Cap2-1 - Espaços Vetoriais.pdf</a>
+                                        </p>
+                                    </li>
+                                    <li role="treeitem" tabindex="-1" >
+                                        
+                                        <p>
+                                            <img class="icon" alt="" aria-hidden="true" src="https://elearning.ua.pt/theme/image.php/adaptable/core/1792578704/f/pdf" />
+                                        
+                                                <a href="https://elearning.ua.pt/pluginfile.php/30390/mod_folder/content/0/Cap2-2%20-%20Espa%C3%A7os%20Vetoriais.pdf?forcedownload=1">Cap2-2 - Espaços Vetoriais.pdf</a>
+                                        </p>
+                                    </li>
+                                    <li role="treeitem" tabindex="-1" >
+                                        
+                                        <p>
+                                            <img class="icon" alt="" aria-hidden="true" src="https://elearning.ua.pt/theme/image.php/adaptable/core/1792578704/f/pdf" />
+                                        
+                                                <a href="https://elearning.ua.pt/pluginfile.php/30390/mod_folder/content/0/Cap3-1-Determinantes.pdf?forcedownload=1">Cap3-1-Determinantes.pdf</a>
+                                        </p>
+                                    </li>
+                            </ul>
+                    </li>
+                </ul>
+        </div>
+    </div>
+</div></div></section></div></div></div><footer id="page-footer" class="d-none d-lg-block">
+    
+    <div class="container"><div class="row"><div class="left-col col-4"><h3>Tutoriais</h3><div class="text_to_html"><p><a href="https://www.ua.pt/pt/inovacaopedagogica/moodle" target="_blank" rel="noreferrer noopener">Tutoriais para docentes</a></p></div></div><div class="left-col col-4"><h3>Suporte</h3><div class="text_to_html"><p><a href="https://bud.ua.pt/" target="_blank" rel="noreferrer noopener">bud.ua.pt</a><br />Extensão: 22299<br />Telf: +351 234 370099</p></div></div><div class="left-col col-4"><h3>Links rápidos</h3><div class="text_to_html"><p><a href="https://www.ua.pt/" target="_blank" rel="noreferrer noopener">Universidade de Aveiro</a><br /><a href="https://uaonline.ua.pt/pub/default.asp" target="_blank" rel="noreferrer noopener">Notícias UA</a></p></div></div></div></div>
+    <div class="info container2 clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="tool_usertours-resettourcontainer"></div>
+                <div class="col-md-4 my-md-0 my-2 helplink"></div>
+                <div class="col-md-4 my-md-0 my-2"><div class="tool_dataprivacy"><a href="https://elearning.ua.pt/admin/tool/dataprivacy/summary.php">Resumo da retenção de dados</a></div><div><a class="mobilelink" href="https://download.moodle.org/mobile?version=2026042002&amp;lang=pt&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Obter a Aplicação móvel</a></div></div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-md-0 my-2">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="back-to-top"><i class="fa fa-angle-up "></i></div>
+
+
+</div>
+</div>
+
+<script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://elearning.ua.pt/lib/requirejs.php/1792578704/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://elearning.ua.pt/lib/javascript.php/1792578704/lib/jquery/jquery-3.7.1.min',
+        jqueryui: 'https://elearning.ua.pt/lib/javascript.php/1792578704/lib/jquery/ui-1.14.1/jquery-ui.min',
+        jqueryprivate: 'https://elearning.ua.pt/lib/javascript.php/1792578704/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://elearning.ua.pt/lib/javascript.php/1792578704/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+M.util.js_pending('filter_mathjaxloader/loader'); require(['filter_mathjaxloader/loader'], function(amd) {amd.configure({"mathjaxurl":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@4.0.0\/tex-mml-chtml.js","mathjaxconfig":"MathJax.Hub.Config({\r\nconfig: [\"Accessible.js\", \"Safe.js\"],\r\nerrorSettings: { message: [\"!\"] },\r\nskipStartupTypeset: true,\r\nmessageStyle: \"none\"\r\n});\r\n","lang":"pt"}); M.util.js_complete('filter_mathjaxloader/loader');});;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('pt-BR');
+});;
+M.util.js_pending('filter_syntaxhighlighter/hljs'); require(['filter_syntaxhighlighter/hljs'], function(amd) {amd.initHighlighting(); M.util.js_complete('filter_syntaxhighlighter/hljs');});;
+M.util.js_pending('theme_adaptable/adaptable'); require(['theme_adaptable/adaptable'], function(amd) {amd.init({"rtl":false,"stickynavbar":true}); M.util.js_complete('theme_adaptable/adaptable');});;
+M.util.js_pending('theme_adaptable/pace_init'); require(['theme_adaptable/pace_init'], function(amd) {amd.init("minimal"); M.util.js_complete('theme_adaptable/pace_init');});;
+M.util.js_pending('core_courseformat/courseeditor'); require(['core_courseformat/courseeditor'], function(amd) {amd.setViewFormat("444", {"editing":false,"supportscomponents":true,"statekey":"1793120803_1793136922","overriddenStrings":[]}); M.util.js_complete('core_courseformat/courseeditor');});;
+
+require(['core_courseformat/local/courseindex/placeholder'], function(component) {
+    component.init('#course-index-placeholder');
+});
+;
+
+require(['core_courseformat/local/courseindex/drawer'], function(component) {
+    component.init('#courseindex');
+});
+;
+
+    require(['theme_boost/courseindexdrawercontrols'], function(component) {
+    component.init('courseindexdrawercontrols');
+    });
+;
+
+M.util.js_pending('theme_boost/drawers:load');
+require(['theme_boost/drawers'], function() {
+    M.util.js_complete('theme_boost/drawers:load');
+});
+;
+M.util.js_pending('block_navigation/navblock'); require(['block_navigation/navblock'], function(amd) {amd.init("33"); M.util.js_complete('block_navigation/navblock');});;
+M.util.js_pending('block_settings/settingsblock'); require(['block_settings/settingsblock'], function(amd) {amd.init("36", null); M.util.js_complete('block_settings/settingsblock');});;
+M.util.js_pending('theme_adaptable/collapseblock'); require(['theme_adaptable/collapseblock'], function(amd) {amd.collapseBlockInit(); M.util.js_complete('theme_adaptable/collapseblock');});;
+M.util.js_pending('theme_adaptable/collapseblock'); require(['theme_adaptable/collapseblock'], function(amd) {amd.collapseBlockInit(); M.util.js_complete('theme_adaptable/collapseblock');});;
+
+M.util.js_pending('theme_boost/drawers:load');
+require(['theme_boost/drawers'], function() {
+    M.util.js_complete('theme_boost/drawers:load');
+});
+;
+
+require(
+[],
+function() {
+    const uniqid = "6ae1193f8b1d56ae1193f80d4642";
+    const container = document.getElementById('searchinput-navbar-' + uniqid);
+    const collapse = container.querySelector('#searchform-navbar-' + uniqid);
+    const opensearch = container.querySelector('[data-action="opensearch"]');
+    const input = collapse.querySelector('[data-region="input"]');
+    const submit = collapse.querySelector('[data-action="submit"]');
+
+    submit.addEventListener('click', (e) => {
+        if (input.valUE === '') {
+            e.preventDefault();
+        }
+    });
+
+    collapse.addEventListener('hidden.bs.collapse', () => {
+        opensearch.classList.remove('d-none');
+        input.value = '';
+    });
+
+    collapse.addEventListener('show.bs.collapse', () => {
+        opensearch.classList.add('d-none');
+    });
+
+    collapse.addEventListener('shown.bs.collapse', () => {
+        input.focus();
+    });
+});
+;
+
+require(
+[],
+function() {
+    const uniqid = "6ae1193f8b3ce6ae1193f80d4643";
+    const container = document.getElementById('searchinput-navbar-' + uniqid);
+    const collapse = container.querySelector('#searchform-navbar-' + uniqid);
+    const opensearch = container.querySelector('[data-action="opensearch"]');
+    const input = collapse.querySelector('[data-region="input"]');
+    const submit = collapse.querySelector('[data-action="submit"]');
+
+    submit.addEventListener('click', (e) => {
+        if (input.valUE === '') {
+            e.preventDefault();
+        }
+    });
+
+    collapse.addEventListener('hidden.bs.collapse', () => {
+        opensearch.classList.remove('d-none');
+        input.value = '';
+    });
+
+    collapse.addEventListener('show.bs.collapse', () => {
+        opensearch.classList.add('d-none');
+    });
+
+    collapse.addEventListener('shown.bs.collapse', () => {
+        input.focus();
+    });
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, Controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new Controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+M.util.js_pending('theme_boost/drawers:load');
+require(['theme_boost/drawers'], function() {
+    M.util.js_complete('theme_boost/drawers:load');
+});
+;
+
+require(['core_course/manual_completion_toggle'], toggle => {
+    toggle.init();
+});
+;
+M.util.js_pending('core_courseformat/local/content/activity_header'); require(['core_courseformat/local/content/activity_header'], function(amd) {amd.init("[data-for='page-heading']"); M.util.js_complete('core_courseformat/local/content/activity_header');});;
+M.util.js_pending('core_courseformat/local/content/activity_header'); require(['core_courseformat/local/content/activity_header'], function(amd) {amd.init(); M.util.js_complete('core_courseformat/local/content/activity_header');});;
+M.util.js_pending('filter_syntaxhighlighter/hljs'); require(['filter_syntaxhighlighter/hljs'], function(amd) {amd.initHighlighting(); M.util.js_complete('filter_syntaxhighlighter/hljs');});;
+M.util.js_pending('filter_syntaxhighlighter/hljs'); require(['filter_syntaxhighlighter/hljs'], function(amd) {amd.initHighlighting(); M.util.js_complete('filter_syntaxhighlighter/hljs');});;
+M.util.js_pending('filter_syntaxhighlighter/hljs'); require(['filter_syntaxhighlighter/hljs'], function(amd) {amd.initHighlighting(); M.util.js_complete('filter_syntaxhighlighter/hljs');});;
+M.util.js_pending('filter_syntaxhighlighter/hljs'); require(['filter_syntaxhighlighter/hljs'], function(amd) {amd.initHighlighting(); M.util.js_complete('filter_syntaxhighlighter/hljs');});;
+M.util.js_pending('filter_syntaxhighlighter/hljs'); require(['filter_syntaxhighlighter/hljs'], function(amd) {amd.initHighlighting(); M.util.js_complete('filter_syntaxhighlighter/hljs');});;
+M.util.js_pending('filter_syntaxhighlighter/hljs'); require(['filter_syntaxhighlighter/hljs'], function(amd) {amd.initHighlighting(); M.util.js_complete('filter_syntaxhighlighter/hljs');});;
+
+    M.util.js_pending('theme_boost/loader');
+    require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
+        Drawer.init();
+        M.util.js_complete('theme_boost/loader');
+    });
+;
+
+    // Init tree JS.
+    require(['mod_folder/folder'], function(Folder) {
+        Folder.init('folder_tree0');
+    });
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(30390, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
+M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});;
+M.util.js_pending('core/storage_validation'); require(['core/storage_validation'], function(amd) {amd.init(1793135832); M.util.js_complete('core/storage_validation');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\u00daltima altera\u00e7\u00e3o","name":"Designa\u00e7\u00e3o","error":"Erro","info":"Informa\u00e7\u00e3o","yes":"Sim","no":"N\u00e3o","viewallcourses":"Ver todas as disciplinas","cancel":"Cancelar","confirm":"Confirma\u00e7\u00e3o","areyousure":"Tem a certeza?","closebuttontitle":"Fechar","unknownerror":"Erro desconhecido","file":"Ficheiro","url":"URL","collapseall":"Contrair tudo","expandall":"Expandir tudo"},"repository":{"type":"Tipo","size":"Tamanho","invalidjson":"String JSON inv\u00e1lida","nofilesattached":"Sem ficheiros selecionados","filepicker":"Selecionar ficheiro","logout":"Sair","nofilesavailable":"N\u00e3o existem ficheiros dispon\u00edveis","norepositoriesavailable":"Nenhum dos seus reposit\u00f3rios atuais pode devolver ficheiros no formato indicado.","fileexistsdialogheader":"Ficheiro existente","fileexistsdialog_editor":"Um ficheiro com esse nome j\u00e1 se encontra anexo ao texto que est\u00e1 a editar.","fileexistsdialog_filemanager":"Um ficheiro com esse nome j\u00e1 se encontra anexo","renameto":"Renomear para \"{$a}\"","referencesexist":"Existem {$a} hiperliga\u00e7\u00f5es para este ficheiro","select":"Selecionar","invalidfiletypetitle":"Tipo de ficheiro n\u00e3o aceite"},"admin":{"confirmdeletecomments":"Tem a certeza de que pretende apagar os coment\u00e1rios selecionados?","confirmation":"Confirma\u00e7\u00e3o"},"debug":{"debuginfo":"Informa\u00e7\u00e3o de depura\u00e7\u00e3o","line":"Linha","stacktrace":"Stack trace"},"langconfig":{"labelsep":":&nbsp;"}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {M.util.help_popups.setup(Y);
+ M.util.js_pending('random6ae1193f80d4646'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random6ae1193f80d4646'); });
+})();
+//]]>
+</script>
+
+
+
+
+
+
+</body></html>Ii��;      j�>j�?JD�       X    O^partitionKey=%28https%2Cua.pt%29,:https://elearning.ua.pt/mod/folder/view.php?id=27027 necko:classified 1 peer-ip-address 193.136.173.95 peer-port 443 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Tue, 27 Oct 2026 21:35:59 GMT
+Server: Apache/2.4.62 (Rocky Linux) OpenSSL/3.5.1
+Strict-Transport-Security: max-age=31536000
+Cache-Control: private, pre-check=0, post-check=0, max-age=0, no-transform
+Pragma: no-cache
+Content-Language: pt
+Content-Script-Type: text/javascript
+Content-Style-Type: text/css
+X-UA-Compatible: IE=edge
+Accept-Ranges: none
+X-Frame-Options: sameorigin
+Content-Type: text/html; charset=utf-8
+ original-response-headers Date: Tue, 27 Oct 2026 21:35:59 GMT
+Server: Apache/2.4.62 (Rocky Linux) OpenSSL/3.5.1
+Strict-Transport-Security: max-age=31536000
+Expires: 
+Cache-Control: private, pre-check=0, post-check=0, max-age=0, no-transform
+Pragma: no-cache
+Content-Language: pt
+Content-Script-Type: text/javascript
+Content-Style-Type: text/css
+X-UA-Compatible: IE=edge
+Accept-Ranges: none
+X-Frame-Options: sameorigin
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+ ctid 1 net-response-time-onstart 1353 net-response-time-onstop 1519     >G

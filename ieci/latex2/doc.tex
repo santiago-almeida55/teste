@@ -1,0 +1,36 @@
+\documentclass[]{report}
+\usepackage[utf8]{inputenc} % Input UTF8
+\usepackage[portuguese]{babel} %Usar língua portuguesa
+\usepackage[T1]{fontenc} % Fontes T1
+\usepackage{acronym}
+\usepackage{indentfirst}
+
+\title{\textbf{Introdução à Engenharia de Computadores e Informática \\ Aula 2 de \LaTeX}}
+\author{Santiago Ferreira de Almeida 139931}
+\date{Universidade de Aveiro \today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+Hello World from \LaTeX!\\
+
+
+
+\chapter*{onde estudo}
+Sou edtudante da \ac{ua}.
+\chapter{em que curso estou}
+Estou no curso de \ac{leci}.
+\chapter*{acronimos}
+\addcontentsline{toc}{chapter}{Acrónimos}
+\begin{acronym}
+\acro{ua} [UA] {universidade de Aveiro}
+\acro{leci} [LECI] (licenciatura em engenharia de Computadores e Informática)
+\acro{fp} [FP] (fundamentos da programação)
+\acro{alga} [ALGA] (algebra linear geometria analitica)
+\end{acronym}
+De acordo com Camões \cite{lusiadas}.
+\bibliographystyle{plain}
+\bibliography{mybib}
+
+\end{document}

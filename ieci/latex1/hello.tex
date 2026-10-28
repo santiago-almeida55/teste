@@ -1,0 +1,116 @@
+\documentclass[]{report}
+\usepackage[utf8]{inputenc} % Input UTF8
+\usepackage[portuguese]{babel} %Usar língua portuguesa
+\usepackage[T1]{fontenc} % Fontes T1
+
+\usepackage{indentfirst}
+
+\title{\textbf{Introdução à Engenharia de Computadores e Informática \\ Aula 1 de \LaTeX}}
+\author{Santiago Ferreira de Almeida 139931}
+\date{Universidade de Aveiro \today}
+
+\begin{document}
+\maketitle
+\renewcommand{\contentsname}{Índice}
+\tableofcontents
+
+chapter{caracteres especias}\\
+section{1} \textbackslash \$ \~\\
+section{2} \{ \} \\
+section{3} \[ \]\\
+section{tipos de texto}\\
+chapter{translineação}\\
+
+Hello World from \LaTeX!\\
+Ola sou o santiago sou do primeiro ano de engenharia de computadores e informatica.\\
+chapter{dimensão das letras}\\
+Posso {\small mudar} de {\huge tamanho} de letra sempre que
+me apetecer. Essa \Large mudança permanece em efeito
+{\normalsize até} ao próximo comando de mudança de tamanho,
+caso exista,\normalsize\space ou até ao fim do bloco
+(delimitado por \{ e \}) onde está inserida\\
+
+chapter{lista de itens}\\
+section{listas não numeradas}\\
+\begin{itemize}
+\item este é um item;
+\item este é outro item;
+\item etc.
+\end{itemize}\\
+\begin{itemize}
+\item[+] este é um item;
+\item[+] este é outro item;
+\item[+] etc.
+\end{itemize}\\
+\begin{description}
+\item[UA] - Univ. de Aveiro;
+\item[UC] - Univ. de Coimbra;
+\item[UP] - Univ. do Porto.
+\end{description}\\
+section{listas numeradas}\\
+\begin{enumerate}
+\item este é um item;
+\item este é outro item;
+\item etc.
+\end{enumerate}\\
+\renewcommand{\theenumi}{\Roman{enumi}}
+\begin{enumerate}
+\item Este é um item;
+\item Este é outro item;
+\item etc.
+\end{enumerate}\\
+\renewcommand{\theenumi}{\Roman{enumi}}
+\begin{enumerate}
+\item Este é um item, com subitems:
+\renewcommand{\theenumi}{\alpha{enumi}}
+\begin{enumerate}
+\item Este é um item;
+\item Este é outro item;
+\item etc.
+\end{enumerate}
+\renewcommand{\theenumi}{\Roman{enumi}}
+\item Este é outro item;
+\item etc.
+\end{enumerate}\\
+
+section{figuras}\\
+\begin{figure}[h]
+\begin{center}
+\fbox{Conteúdo da figura, pode ser texto, imagem, etc.}
+\end{center}
+\caption{Legenda da figura}
+\end{figure}\\
+\begin{figure}[t]
+\begin{center}
+\fbox{Conteúdo da figura, pode ser texto, imagem, etc.}
+\end{center}
+\caption{Legenda da figura}
+\end{figure}\\
+\begin{figure}[b]
+\begin{center}
+\fbox{Conteúdo da figura, pode ser texto, imagem, etc.}
+\end{center}
+\caption{Legenda da figura}
+\end{figure}\\
+\begin{figure}[p]
+\begin{center}
+\fbox{Conteúdo da figura, pode ser texto, imagem, etc.}
+\end{center}
+\caption{Legenda da figura}
+\end{figure}\\
+
+section{tabelas}\\
+section{imagens}\\
+section{matemática}\\
+
+
+
+
+\textbackslashvec o.
+
+\\ 
+\sqrt[3]{x}
+\text % .
+
+
+\end{document}

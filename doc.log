@@ -1,0 +1,178 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.10.7)  14 OCT 2026 09:57
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**doc
+(./ieci/latex2/doc.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@chapter=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2024/01/07 v24.1 The Babel package
+\babel@savecnt=\count196
+\U@D=\dimen141
+\l@unhyphenated=\language8
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count197
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuguese.ldf
+Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
+Package babel Info: Making " an active character on input line 143.
+))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/pt/babel-portuguese.tex
+Package babel Info: Importing font and identification data for portuguese
+(babel)             from babel-pt.ini. Reported on input line 11.
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/acronym/acronym.sty
+Package: acronym 2020/04/17 v1.47 Support for acronyms (Tobias Oetiker)
+
+(/usr/share/texlive/texmf-dist/tex/latex/bigfoot/suffix.sty
+Package: suffix 2006/07/15 1.5a Variant command support
+)
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\xs_counta=\count198
+\xs_countb=\count199
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+)
+\AC@clearlist=\toks19
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count266
+\l__pdf_internal_box=\box51
+)
+No file doc.aux.
+\openout1 = `doc.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 13.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 13.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 13.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 13.
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+No file doc.toc.
+\tf@toc=\write3
+\openout3 = `doc.toc'.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 16.
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+[1
+
+]
+Package acronym Info: Label `acro:ua' newly defined as it shall be overridden
+although it is yet undefined on input line 21.
+
+
+Package acronym Warning: Acronym `ua' is not defined on input line 21.
+
+
+Package acronym Warning: Acronym `ua' is not defined on input line 21.
+
+[2
+
+]
+Cap\'{\i }tulo 1.
+Package acronym Info: Label `acro:leci' newly defined as it shall be overridden
+
+although it is yet undefined on input line 23.
+
+Package acronym Warning: Acronym `leci' is not defined on input line 23.
+
+
+Package acronym Warning: Acronym `leci' is not defined on input line 23.
+
+[3
+
+] [4
+
+] (./doc.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2436 strings out of 476121
+ 40217 string characters out of 5793799
+ 1924975 words of memory out of 5000000
+ 24471 multiletter control sequences out of 15000+600000
+ 570207 words of font info for 59 fonts, out of 8000000 for 9000
+ 38 hyphenation exceptions out of 8191
+ 42i,6n,52p,266b,218s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/santiago/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.
+600pk> </home/santiago/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1
+000.600pk> </home/santiago/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/e
+crm0700.600pk> </home/santiago/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/
+ec/ecrm1000.600pk> </home/santiago/.texlive2023/texmf-var/fonts/pk/ljfour/jknap
+pen/ec/ecbx2488.600pk> </home/santiago/.texlive2023/texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecrm1200.600pk> </home/santiago/.texlive2023/texmf-var/fonts/pk/ljfo
+ur/jknappen/ec/ecbx1200.600pk> </home/santiago/.texlive2023/texmf-var/fonts/pk/
+ljfour/jknappen/ec/ecbx1728.600pk>
+Output written on doc.pdf (5 pages, 47199 bytes).
+PDF statistics:
+ 189 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

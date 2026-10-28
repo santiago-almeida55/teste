@@ -1,0 +1,1856 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="pt" xml:lang="pt">
+<head>
+    <title>Painel do utilizador | eLearning</title>
+    <link rel="icon" href="https://elearning.ua.pt/pluginfile.php/3/core_admin/favicon/64x64/1792578704/favicon-ua.svg">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, Painel do utilizador | eLearning" />
+<link rel="stylesheet" type="text/css" href="https://elearning.ua.pt/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://elearning.ua.pt/theme/styles.php/adaptable/1792578704_1/all" />
+<link rel="stylesheet" type="text/css" href="https://elearning.ua.pt/filter/syntaxhighlighter/styles/atom-one-light.min.css" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/elearning.ua.pt","apibase":"https:\/\/elearning.ua.pt\/r.php\/api","homeurl":{},"sesskey":"Dvf7F75JGy","sessiontimeout":"28800","sessiontimeoutwarning":"1200","themerev":"1792578704","slasharguments":1,"theme":"adaptable","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1792578704","admin":"admin","svgicons":true,"usertimezone":"Europa\/London","language":"pt","courseId":1,"courseContextId":6,"contextid":475275,"contextInstanceId":63975,"langrev":1793163014,"templaterev":"1792578704","siteId":1,"userId":63975,"deprecationignorelist":[],"traceId":null};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/elearning.ua.pt\/lib\/yuilib\/3.18.1\/","comboBase":"https:\/\/elearning.ua.pt\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/elearning.ua.pt\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/elearning.ua.pt\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/elearning.ua.pt\/theme\/yui_combo.php?m\/1792578704\/","combine":true,"comboBase":"https:\/\/elearning.ua.pt\/theme\/yui_combo.php?","ext":false,"root":"m\/1792578704\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form","datatype-date-format"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]}}},"gallery":{"name":"gallery","base":"https:\/\/elearning.ua.pt\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/elearning.ua.pt\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1792578704\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/elearning.ua.pt\/lib\/javascript.php\/1792578704\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/elearning.ua.pt\/lib\/javascript.php\/1792578704\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]}},"logInclude":[],"logExclude":[],"logLevel":null};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+<script type="importmap">{
+    "imports": {
+        "@moodle/lms/": "https://elearning.ua.pt/r.php/core/esm/1792578704/@moodle/lms/",
+        "@moodlehq/design-system": "https://elearning.ua.pt/r.php/core/esm/1792578704/@moodlehq/design-system",
+        "react": "https://elearning.ua.pt/r.php/core/esm/1792578704/react",
+        "react/": "https://elearning.ua.pt/r.php/core/esm/1792578704/react/",
+        "react-dom": "https://elearning.ua.pt/r.php/core/esm/1792578704/react-dom",
+        "react-dom/": "https://elearning.ua.pt/r.php/core/esm/1792578704/react-dom/"
+    }
+}</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="eLearning">
+    <meta name="twitter:title" content="Painel do utilizador | eLearning">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Painel do utilizador | eLearning">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta name="og:site_name" content="eLearning">
+
+    <!-- Chrome, Firefox OS and Opera on Android topbar color -->
+    <meta name="theme-color" content="#fff">
+
+    <!-- Windows Phone topbar color -->
+    <meta name="msapplication-navbutton-color" content="#fff">
+
+    <!-- iOS Safari topbar color -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+</head><body  id="page-my-index" class="limitedwidth format-site  path-my gecko dir-ltr lang-pt yui-skin-sam yui3-skin-sam elearning-ua-pt pagelayout-mydashboard course-1 context-475275 theme theme_adaptable two-column  fullin header-style1 showblockicons standard uses-drawers responsivesectionnav loggedin notguest"><div>
+    <a class="visually-hidden-focusable" href="#maincontent">Ir para o conteúdo principal</a>
+</div><script src="https://elearning.ua.pt/lib/javascript.php/1792578704/lib/polyfills/polyfill.js"></script>
+<script src="https://elearning.ua.pt/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.js"></script><script src="https://elearning.ua.pt/lib/javascript.php/1792578704/lib/javascript-static.js"></script>
+<script type="module">import "@moodle/lms/core/react_autoinit";</script><script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+<div id="page-wrapper"><div  class="drawer drawer-left show d-none d-print-none not-initialized" data-region="fixed-drawer" id="theme_adaptable-drawers-sidepost" data-preference="drawer-open-block" data-state="show-drawer-left" data-forceopen="" data-close-on-resize="1">
+    <div class="drawerheader">
+        <div class="drawerheading">
+            
+        </div>
+        <div class="draweractions">
+            <div class="drawerheadercontent">
+                
+            </div>
+            <button
+                class="btn btn-icon icon-size-3 drawertoggle"
+                data-toggler="drawers"
+                data-action="closedrawer"
+                data-target="theme_adaptable-drawers-sidepost"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Fechar painel dos blocos"
+                aria-label="Fechar painel dos blocos"
+            >
+                    <i class="afaicon fa fa-xmark fa-fw" aria-hidden="true"  ></i>
+            </button>
+        </div>
+    </div>
+    <div class="drawercontent drag-container" data-usertour="scroller">
+                    <section class="d-print-none" aria-label="Blocos">
+                <aside id="block-region-side-post" class="block-region" data-blockregion="side-post" data-droptarget="1"><h2 class="visually-hidden">Blocos</h2><a class="skip skip-block" id="fsb-1" href="#sb-1">Ignorar Navegação</a><section id="inst33" class="block_navigation block mb-3" role="navigation" data-block="navigation" data-instance-id="33" aria-labelledby="instance-33-header"><div class="header"><div id="instance-33-action" class="block-action block-collapsible" data-instance-id="33" title="Show / hide the block"></div><div class="title"><div class="block_action"></div><h2 class="d-inline" id="instance-33-header">Navegação</h2></div><div class="block-controls"></div></div><div class="content"><ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/nav_loader"><li class="type_unknown depth_1 contains_branch current_branch" role="treeitem" aria-expanded="true" aria-owns="random6ae1bfb3eb9af3_group" data-collapsible="false" aria-labelledby="random6ae1bfb3eb9af2_label_1_1"><p class="tree_item branch active_tree_node navigation_node"><a tabindex="-1" id="random6ae1bfb3eb9af2_label_1_1" href="https://elearning.ua.pt/my/">Painel do utilizador</a></p><ul id="random6ae1bfb3eb9af3_group" role="group"><li class="type_setting depth_2 item_with_icon" role="treeitem" aria-labelledby="random6ae1bfb3eb9af4_label_2_2"><p class="tree_item hasicon"><a tabindex="-1" id="random6ae1bfb3eb9af4_label_2_2" href="https://elearning.ua.pt/?redirect=0"><i class="afaicon fa fa-house navicon fa-fw" aria-hidden="true"  ></i><span class="item-content-wrap">Página inicial do site</span></a></p></li><li class="type_course depth_2 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random6ae1bfb3eb9af6_group" aria-labelledby="random6ae1bfb3eb9af4_label_2_3"><p class="tree_item branch"><span tabindex="-1" id="random6ae1bfb3eb9af4_label_2_3" title="eLearning">Páginas do site</span></p><ul id="random6ae1bfb3eb9af6_group" role="group" aria-hidden="true"><li class="type_custom depth_3 item_with_icon" role="treeitem" aria-labelledby="random6ae1bfb3eb9af7_label_3_5"><p class="tree_item hasicon"><a tabindex="-1" id="random6ae1bfb3eb9af7_label_3_5" href="https://elearning.ua.pt/my/courses.php"><i class="afaicon anavigationitem far fa-circle fa-2xs align-middle navicon fa-fw" aria-hidden="true"  ></i><span class="item-content-wrap">Minhas disciplinas</span></a></p></li><li class="type_setting depth_3 item_with_icon" role="treeitem" aria-labelledby="random6ae1bfb3eb9af7_label_3_6"><p class="tree_item hasicon"><a tabindex="-1" id="random6ae1bfb3eb9af7_label_3_6" href="https://elearning.ua.pt/tag/search.php"><i class="afaicon anavigationitem far fa-circle fa-2xs align-middle navicon fa-fw" aria-hidden="true"  ></i><span class="item-content-wrap">Palavras-chave</span></a></p></li><li class="type_activity depth_3 item_with_icon" role="treeitem" aria-labelledby="random6ae1bfb3eb9af7_label_3_9"><p class="tree_item hasicon"><a tabindex="-1" id="random6ae1bfb3eb9af7_label_3_9" title="Fórum" href="https://elearning.ua.pt/mod/forum/view.php?id=350481"><img class="icon navicon" alt="Fórum" title="Fórum" src="https://elearning.ua.pt/theme/image.php/adaptable/forum/1792578704/monologo" /><span class="item-content-wrap">Site announcements</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random6ae1bfb3eb9af11_group" aria-labelledby="random6ae1bfb3eb9af4_label_2_10"><p class="tree_item branch canexpand"><a tabindex="-1" id="random6ae1bfb3eb9af4_label_2_10" href="https://elearning.ua.pt/my/courses.php">Minhas disciplinas</a></p><ul id="random6ae1bfb3eb9af11_group" role="group"><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_3429" data-node-key="3429" data-node-type="20" aria-labelledby="random6ae1bfb3eb9af12_label_3_11"><p class="tree_item branch" id="expandable_branch_20_3429"><a tabindex="-1" id="random6ae1bfb3eb9af12_label_3_11" title="Fundamentos de Programação " href="https://elearning.ua.pt/course/view.php?id=3429">40379-FP</a></p></li><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_2610" data-node-key="2610" data-node-type="20" aria-labelledby="random6ae1bfb3eb9af12_label_3_12"><p class="tree_item branch" id="expandable_branch_20_2610"><a tabindex="-1" id="random6ae1bfb3eb9af12_label_3_12" title="Introdução à Engenharia de Computadores e Informática" href="https://elearning.ua.pt/course/view.php?id=2610">43832-IECI</a></p></li><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_468" data-node-key="468" data-node-type="20" aria-labelledby="random6ae1bfb3eb9af12_label_3_13"><p class="tree_item branch" id="expandable_branch_20_468"><a tabindex="-1" id="random6ae1bfb3eb9af12_label_3_13" title="Cálculo I - C" href="https://elearning.ua.pt/course/view.php?id=468">42718-C-IC</a></p></li><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_444" data-node-key="444" data-node-type="20" aria-labelledby="random6ae1bfb3eb9af12_label_3_14"><p class="tree_item branch" id="expandable_branch_20_444"><a tabindex="-1" id="random6ae1bfb3eb9af12_label_3_14" title="Álgebra Linear e Geometria Analítica - A" href="https://elearning.ua.pt/course/view.php?id=444">42727-ALGAA</a></p></li><li class="type_course depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_20_5550" data-node-key="5550" data-node-type="20" aria-labelledby="random6ae1bfb3eb9af12_label_3_15"><p class="tree_item branch" id="expandable_branch_20_5550"><a tabindex="-1" id="random6ae1bfb3eb9af12_label_3_15" title="Introdução aos Sistemas Digitais" href="https://elearning.ua.pt/course/view.php?id=5550">40332-ISD</a></p></li></ul></li></ul></li></ul></div></section><span class="skip-block-to" id="sb-1"></span><a class="skip skip-block" id="fsb-3" href="#sb-3">Ignorar Calendário</a><section id="inst350466" class="block_calendar_month block mb-3" role="region" data-block="calendar_month" data-instance-id="350466" aria-labelledby="instance-350466-header"><div class="header"><div id="instance-350466-action" class="block-action block-collapsible" data-instance-id="350466" title="Show / hide the block"></div><div class="title"><div class="block_action"></div><h2 class="d-inline" id="instance-350466-header">Calendário</h2></div><div class="block-controls"></div></div><div class="content"><div data-region="calendar" class="maincalendar"><div id="calendar-month-6ae1bfb44741d6ae1bfb3eb9af13-1" data-template="core_calendar/month_detailed">
+    <div class="header d-flex flex-wrap p-1">
+            <label class="visually-hidden" for="calendar-course-filter-1">Lista de disciplinas</label><select class="select form-select cal_courses_flt ms-1 me-auto me-2 mb-2" id="calendar-course-filter-1" name="course"><option selected="selected" value="1">Todas as disciplinas</option><option value="5550">40332-ISD Introdução aos Sistemas Digitais</option><option value="3429">40379-FP Fundamentos de Programação </option><option value="468">42718-C-IC Cálculo I - C</option><option value="444">42727-ALGAA Álgebra Linear e Geometria Analític...</option><option value="2610">43832-IECI Introdução à Engenharia de Computado...</option></select>
+        <button class="btn btn-primary float-sm-end float-end ms-1 mb-2" data-context-id="6" data-action="new-event-button">
+            Novo evento
+        </button>
+    </div>
+    <div aria-live="polite" class="visually-hidden calendar-announcements"></div>
+    <div class="calendarwrapper" data-courseid="1" data-context-id="6" data-month="10" data-year="2026" data-view="monthblock">
+        <div id="month-navigation-6ae1bfb44741d6ae1bfb3eb9af13-1" class="controls">
+            <div class="calendar-controls">
+                <a href="https://elearning.ua.pt/calendar/view.php?view=month&amp;time=1788217200" class="arrow_link previous" title="Mês anterior: setembro"   data-year="2026" data-month="9" data-drop-zone="nav-link"  aria-label="Mês anterior: setembro" >
+                    <span class="arrow" aria-hidden="true">&#x25C4;</span>
+                    &nbsp;
+                    <span class="arrow_text">setembro</span>
+                </a>
+                <span class="hide"> | </span>
+                    <h4 class="current">outubro de 2026</h4>
+                <span class="hide"> | </span>
+                <a href="https://elearning.ua.pt/calendar/view.php?view=month&amp;time=1793491200" class="arrow_link next" title="Próximo mês: novembro"   data-year="2026" data-month="11" data-drop-zone="nav-link"  aria-label="Próximo mês: novembro" >
+                    <span class="arrow_text">novembro</span>
+                    &nbsp;
+                    <span class="arrow" aria-hidden="true">&#x25BA;</span>
+                </a>
+            </div>
+        </div>
+        <span class="overlay-icon-container hidden" data-region="overlay-icon-container">
+            <span class="loading-icon icon-no-margin ">
+                <i class="afaicon fa fa-spinner fa-spin fa-fw"  title="A carregar" role="img" aria-label="A carregar"></i>
+            </span>
+        </span>
+        <table id="month-detailed-6ae1bfb44741d6ae1bfb3eb9af13-1" class="calendarmonth calendartable table-reboot mb-0">
+            <thead>
+                <tr>
+                    <th class="header text-xs-center">
+                        <span class="visually-hidden">Segunda</span>
+                        <span aria-hidden="true">Seg</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="visually-hidden">Terça</span>
+                        <span aria-hidden="true">Ter</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="visually-hidden">Quarta</span>
+                        <span aria-hidden="true">Qua</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="visually-hidden">Quinta</span>
+                        <span aria-hidden="true">Qui</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="visually-hidden">Sexta</span>
+                        <span aria-hidden="true">Sex</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="visually-hidden">Sábado</span>
+                        <span aria-hidden="true">Sab</span>
+                    </th>
+                    <th class="header text-xs-center">
+                        <span class="visually-hidden">Domingo</span>
+                        <span aria-hidden="true">Dom</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-region="month-view-week">
+                        <td class="dayblank">&nbsp;</td>
+                        <td class="dayblank">&nbsp;</td>
+                        <td class="dayblank">&nbsp;</td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="1"
+                            data-day-timestamp="1790809200"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1790843172"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, quinta-feira, 1 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">1</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, quinta-feira, 1 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">1</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="2"
+                            data-day-timestamp="1790895600"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1790929572"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, sexta-feira, 2 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">2</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, sexta-feira, 2 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">2</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start weekend clickable"
+                            data-day="3"
+                            data-day-timestamp="1790982000"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1791015972"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, sábado, 3 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">3</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, sábado, 3 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">3</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start weekend clickable"
+                            data-day="4"
+                            data-day-timestamp="1791068400"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1791102372"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, domingo, 4 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">4</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, domingo, 4 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">4</span></span></span>
+                            </div>
+                        </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="5"
+                            data-day-timestamp="1791154800"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1791188772"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, segunda-feira, 5 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">5</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, segunda-feira, 5 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">5</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="6"
+                            data-day-timestamp="1791241200"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1791275172"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, terça-feira, 6 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">6</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, terça-feira, 6 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">6</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="7"
+                            data-day-timestamp="1791327600"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1791361572"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, quarta-feira, 7 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">7</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, quarta-feira, 7 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">7</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="8"
+                            data-day-timestamp="1791414000"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1791447972"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, quinta-feira, 8 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">8</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, quinta-feira, 8 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">8</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="9"
+                            data-day-timestamp="1791500400"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1791534372"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, sexta-feira, 9 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">9</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, sexta-feira, 9 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">9</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start weekend clickable"
+                            data-day="10"
+                            data-day-timestamp="1791586800"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1791620772"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, sábado, 10 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">10</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, sábado, 10 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">10</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start weekend clickable"
+                            data-day="11"
+                            data-day-timestamp="1791673200"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1791707172"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, domingo, 11 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">11</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, domingo, 11 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">11</span></span></span>
+                            </div>
+                        </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="12"
+                            data-day-timestamp="1791759600"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1791793572"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, segunda-feira, 12 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">12</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, segunda-feira, 12 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">12</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable hasevent"
+                            data-day="13"
+                            data-day-timestamp="1791846000"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1791879972"
+                             data-title="Eventos para terça-feira, 13 de outubro">
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">2 eventos, terça-feira, 13 de outubro</span>
+                                    <a data-action="view-day-link" href="#" class="aalink day" aria-label="Eventos para terça-feira, 13 de outubro"
+                                        data-year="2026" data-month="10" data-day="13"
+                                        data-courseid="1" data-categoryid="0"
+                                        data-timestamp="1791846000"><span class="day-number-circle"><span class="day-number">13</span></span></a>
+                                    <div data-region="day-content">
+                                        <ul>
+                                                <li data-region="event-item"
+                                                    data-event-component="mod_quiz"
+                                                    data-event-eventtype="open"
+                                                    data-event-folded="false"
+                                                    data-eventtype-course="1"
+>
+    
+                                                    <a data-action="view-event" data-event-id="43835" href="https://elearning.ua.pt/mod/quiz/view.php?id=438362" title="Inicia &#39;Quiz TP1 Aula 13 outubro&#39;">
+                                                        <span class="calendar-circle calendar_event_course">
+                                                            &nbsp;
+                                                        </span>
+                                                        <span class="eventname">Inicia &#39;Quiz TP1 Aula 13 outubro&#39;</span>
+                                                    </a>
+                                                </li>
+                                                <li data-region="event-item"
+                                                    data-event-component="mod_quiz"
+                                                    data-event-eventtype="close"
+                                                    data-event-folded="false"
+                                                    data-eventtype-course="1"
+>
+    
+                                                    <a data-action="view-event" data-event-id="43838" href="https://elearning.ua.pt/mod/quiz/view.php?id=438362" title="Fecha &#39;Quiz TP1 Aula 13 outubro&#39;">
+                                                        <span class="calendar-circle calendar_event_course">
+                                                            &nbsp;
+                                                        </span>
+                                                        <span class="eventname">Fecha &#39;Quiz TP1 Aula 13 outubro&#39;</span>
+                                                    </a>
+                                                </li>
+                                            <li data-action="view-more-events" style="display: none">
+                                                <strong>
+                                                    <a data-action="view-day-link" href="#" class="aalink day" aria-label="Eventos para terça-feira, 13 de outubro"
+                                                       data-year="2026" data-month="10" data-day="13"
+                                                       data-courseid="1" data-categoryid="0"
+                                                       data-timestamp="1791846000">
+                                                       Mais 
+                                                    </a>
+                                                </strong>
+                                            </li>
+                                        </ul>
+                                        <div class="hidden">
+                                                <div data-popover-eventtype-course="1">
+                                                               <img alt="Não respondido" title="Não respondido" src="https://elearning.ua.pt/theme/image.php/adaptable/quiz/1792578704/monologo?filtericon=1" class="icon activityicon icon">
+                                                    Inicia &#39;Quiz TP1 Aula 13 outubro&#39;
+                                                </div>
+                                                <div data-popover-eventtype-course="1">
+                                                               <img alt="Fechar janela" title="Fechar janela" src="https://elearning.ua.pt/theme/image.php/adaptable/quiz/1792578704/monologo?filtericon=1" class="icon activityicon icon">
+                                                    Fecha &#39;Quiz TP1 Aula 13 outubro&#39;
+                                                </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">2 eventos, terça-feira, 13 de outubro</span>
+                                    <a data-action="view-day-link" href="#" class="day aalink" aria-label="Eventos para terça-feira, 13 de outubro"
+                                        data-year="2026" data-month="10" data-day="13"
+                                        data-courseid="1" data-categoryid="0"
+                                        data-timestamp="1791846000"><span class="day-number-circle"><span class="day-number">13</span></span></a>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="14"
+                            data-day-timestamp="1791932400"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1791966372"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, quarta-feira, 14 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">14</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, quarta-feira, 14 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">14</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="15"
+                            data-day-timestamp="1792018800"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1792052772"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, quinta-feira, 15 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">15</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, quinta-feira, 15 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">15</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="16"
+                            data-day-timestamp="1792105200"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1792139172"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, sexta-feira, 16 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">16</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, sexta-feira, 16 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">16</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start weekend clickable"
+                            data-day="17"
+                            data-day-timestamp="1792191600"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1792225572"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, sábado, 17 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">17</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, sábado, 17 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">17</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start weekend clickable"
+                            data-day="18"
+                            data-day-timestamp="1792278000"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1792311972"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, domingo, 18 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">18</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, domingo, 18 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">18</span></span></span>
+                            </div>
+                        </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="19"
+                            data-day-timestamp="1792364400"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1792398372"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, segunda-feira, 19 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">19</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, segunda-feira, 19 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">19</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable hasevent"
+                            data-day="20"
+                            data-day-timestamp="1792450800"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1792484772"
+                             data-title="Eventos para terça-feira, 20 de outubro">
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">2 eventos, terça-feira, 20 de outubro</span>
+                                    <a data-action="view-day-link" href="#" class="aalink day" aria-label="Eventos para terça-feira, 20 de outubro"
+                                        data-year="2026" data-month="10" data-day="20"
+                                        data-courseid="1" data-categoryid="0"
+                                        data-timestamp="1792450800"><span class="day-number-circle"><span class="day-number">20</span></span></a>
+                                    <div data-region="day-content">
+                                        <ul>
+                                                <li data-region="event-item"
+                                                    data-event-component="mod_quiz"
+                                                    data-event-eventtype="open"
+                                                    data-event-folded="false"
+                                                    data-eventtype-course="1"
+>
+    
+                                                    <a data-action="view-event" data-event-id="44888" href="https://elearning.ua.pt/mod/quiz/view.php?id=445085" title="Inicia &#39;Quiz TP1 Aula 20 outubro&#39;">
+                                                        <span class="calendar-circle calendar_event_course">
+                                                            &nbsp;
+                                                        </span>
+                                                        <span class="eventname">Inicia &#39;Quiz TP1 Aula 20 outubro&#39;</span>
+                                                    </a>
+                                                </li>
+                                                <li data-region="event-item"
+                                                    data-event-component="mod_quiz"
+                                                    data-event-eventtype="close"
+                                                    data-event-folded="false"
+                                                    data-eventtype-course="1"
+>
+    
+                                                    <a data-action="view-event" data-event-id="44891" href="https://elearning.ua.pt/mod/quiz/view.php?id=445085" title="Fecha &#39;Quiz TP1 Aula 20 outubro&#39;">
+                                                        <span class="calendar-circle calendar_event_course">
+                                                            &nbsp;
+                                                        </span>
+                                                        <span class="eventname">Fecha &#39;Quiz TP1 Aula 20 outubro&#39;</span>
+                                                    </a>
+                                                </li>
+                                            <li data-action="view-more-events" style="display: none">
+                                                <strong>
+                                                    <a data-action="view-day-link" href="#" class="aalink day" aria-label="Eventos para terça-feira, 20 de outubro"
+                                                       data-year="2026" data-month="10" data-day="20"
+                                                       data-courseid="1" data-categoryid="0"
+                                                       data-timestamp="1792450800">
+                                                       Mais 
+                                                    </a>
+                                                </strong>
+                                            </li>
+                                        </ul>
+                                        <div class="hidden">
+                                                <div data-popover-eventtype-course="1">
+                                                               <img alt="Não respondido" title="Não respondido" src="https://elearning.ua.pt/theme/image.php/adaptable/quiz/1792578704/monologo?filtericon=1" class="icon activityicon icon">
+                                                    Inicia &#39;Quiz TP1 Aula 20 outubro&#39;
+                                                </div>
+                                                <div data-popover-eventtype-course="1">
+                                                               <img alt="Fechar janela" title="Fechar janela" src="https://elearning.ua.pt/theme/image.php/adaptable/quiz/1792578704/monologo?filtericon=1" class="icon activityicon icon">
+                                                    Fecha &#39;Quiz TP1 Aula 20 outubro&#39;
+                                                </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">2 eventos, terça-feira, 20 de outubro</span>
+                                    <a data-action="view-day-link" href="#" class="day aalink" aria-label="Eventos para terça-feira, 20 de outubro"
+                                        data-year="2026" data-month="10" data-day="20"
+                                        data-courseid="1" data-categoryid="0"
+                                        data-timestamp="1792450800"><span class="day-number-circle"><span class="day-number">20</span></span></a>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="21"
+                            data-day-timestamp="1792537200"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1792571172"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, quarta-feira, 21 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">21</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, quarta-feira, 21 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">21</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="22"
+                            data-day-timestamp="1792623600"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1792657572"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, quinta-feira, 22 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">22</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, quinta-feira, 22 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">22</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="23"
+                            data-day-timestamp="1792710000"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1792743972"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, sexta-feira, 23 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">23</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, sexta-feira, 23 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">23</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start weekend clickable"
+                            data-day="24"
+                            data-day-timestamp="1792796400"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1792830372"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, sábado, 24 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">24</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, sábado, 24 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">24</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start weekend clickable"
+                            data-day="25"
+                            data-day-timestamp="1792882800"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1792920372"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, domingo, 25 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">25</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, domingo, 25 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">25</span></span></span>
+                            </div>
+                        </td>
+                </tr>
+                <tr data-region="month-view-week">
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="26"
+                            data-day-timestamp="1792972800"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1793006772"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, segunda-feira, 26 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">26</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, segunda-feira, 26 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">26</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable hasevent"
+                            data-day="27"
+                            data-day-timestamp="1793059200"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1793093172"
+                             data-title="Eventos para terça-feira, 27 de outubro">
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">2 eventos, terça-feira, 27 de outubro</span>
+                                    <a data-action="view-day-link" href="#" class="aalink day" aria-label="Eventos para terça-feira, 27 de outubro"
+                                        data-year="2026" data-month="10" data-day="27"
+                                        data-courseid="1" data-categoryid="0"
+                                        data-timestamp="1793059200"><span class="day-number-circle"><span class="day-number">27</span></span></a>
+                                    <div data-region="day-content">
+                                        <ul>
+                                                <li data-region="event-item"
+                                                    data-event-component="mod_quiz"
+                                                    data-event-eventtype="open"
+                                                    data-event-folded="false"
+                                                    data-eventtype-course="1"
+>
+    
+                                                    <a data-action="view-event" data-event-id="46082" href="https://elearning.ua.pt/mod/quiz/view.php?id=451979" title="Inicia &#39;Quiz TP1 Aula 27 outubro&#39;">
+                                                        <span class="calendar-circle calendar_event_course">
+                                                            &nbsp;
+                                                        </span>
+                                                        <span class="eventname">Inicia &#39;Quiz TP1 Aula 27 outubro&#39;</span>
+                                                    </a>
+                                                </li>
+                                                <li data-region="event-item"
+                                                    data-event-component="mod_quiz"
+                                                    data-event-eventtype="close"
+                                                    data-event-folded="false"
+                                                    data-eventtype-course="1"
+>
+    
+                                                    <a data-action="view-event" data-event-id="46085" href="https://elearning.ua.pt/mod/quiz/view.php?id=451979" title="Fecha &#39;Quiz TP1 Aula 27 outubro&#39;">
+                                                        <span class="calendar-circle calendar_event_course">
+                                                            &nbsp;
+                                                        </span>
+                                                        <span class="eventname">Fecha &#39;Quiz TP1 Aula 27 outubro&#39;</span>
+                                                    </a>
+                                                </li>
+                                            <li data-action="view-more-events" style="display: none">
+                                                <strong>
+                                                    <a data-action="view-day-link" href="#" class="aalink day" aria-label="Eventos para terça-feira, 27 de outubro"
+                                                       data-year="2026" data-month="10" data-day="27"
+                                                       data-courseid="1" data-categoryid="0"
+                                                       data-timestamp="1793059200">
+                                                       Mais 
+                                                    </a>
+                                                </strong>
+                                            </li>
+                                        </ul>
+                                        <div class="hidden">
+                                                <div data-popover-eventtype-course="1">
+                                                               <img alt="Não respondido" title="Não respondido" src="https://elearning.ua.pt/theme/image.php/adaptable/quiz/1792578704/monologo?filtericon=1" class="icon activityicon icon">
+                                                    Inicia &#39;Quiz TP1 Aula 27 outubro&#39;
+                                                </div>
+                                                <div data-popover-eventtype-course="1">
+                                                               <img alt="Fechar janela" title="Fechar janela" src="https://elearning.ua.pt/theme/image.php/adaptable/quiz/1792578704/monologo?filtericon=1" class="icon activityicon icon">
+                                                    Fecha &#39;Quiz TP1 Aula 27 outubro&#39;
+                                                </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">2 eventos, terça-feira, 27 de outubro</span>
+                                    <a data-action="view-day-link" href="#" class="day aalink" aria-label="Eventos para terça-feira, 27 de outubro"
+                                        data-year="2026" data-month="10" data-day="27"
+                                        data-courseid="1" data-categoryid="0"
+                                        data-timestamp="1793059200"><span class="day-number-circle"><span class="day-number">27</span></span></a>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start today clickable hasevent"
+                            data-day="28"
+                            data-day-timestamp="1793145600"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1793179572" title="Hoje"
+                             data-title="Hoje quarta-feira, 28 de outubro">
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">1 evento, quarta-feira, 28 de outubro</span>
+                                    <a data-action="view-day-link" href="#" class="aalink day" aria-label="Hoje quarta-feira, 28 de outubro"
+                                        data-year="2026" data-month="10" data-day="28"
+                                        data-courseid="1" data-categoryid="0"
+                                        data-timestamp="1793145600"><span class="day-number-circle"><span class="day-number">28</span></span></a>
+                                    <div data-region="day-content">
+                                        <ul>
+                                                <li data-region="event-item"
+                                                    data-event-component="mod_choice"
+                                                    data-event-eventtype="close"
+                                                    data-event-folded="false"
+                                                    data-eventtype-course="1"
+>
+    
+                                                    <a data-action="view-event" data-event-id="32208" href="https://elearning.ua.pt/mod/choice/view.php?id=338271" title="Fecha &#39;Sessões de Esclarecimento (OTs)&#39;">
+                                                        <span class="calendar-circle calendar_event_course">
+                                                            &nbsp;
+                                                        </span>
+                                                        <span class="eventname">Fecha &#39;Sessões de Esclarecimento (OTs)&#39;</span>
+                                                    </a>
+                                                </li>
+                                            <li data-action="view-more-events" style="display: none">
+                                                <strong>
+                                                    <a data-action="view-day-link" href="#" class="aalink day" aria-label="Hoje quarta-feira, 28 de outubro"
+                                                       data-year="2026" data-month="10" data-day="28"
+                                                       data-courseid="1" data-categoryid="0"
+                                                       data-timestamp="1793145600">
+                                                       Mais 
+                                                    </a>
+                                                </strong>
+                                            </li>
+                                        </ul>
+                                        <div class="hidden">
+                                                <div data-popover-eventtype-course="1">
+                                                               <img alt="Evento de atividade" title="Evento de atividade" src="https://elearning.ua.pt/theme/image.php/adaptable/choice/1792578704/monologo?filtericon=1" class="icon activityicon icon">
+                                                    Fecha &#39;Sessões de Esclarecimento (OTs)&#39;
+                                                </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">1 evento, quarta-feira, 28 de outubro</span>
+                                    <a data-action="view-day-link" href="#" class="day aalink" aria-label="Hoje quarta-feira, 28 de outubro"
+                                        data-year="2026" data-month="10" data-day="28"
+                                        data-courseid="1" data-categoryid="0"
+                                        data-timestamp="1793145600"><span class="day-number-circle"><span class="day-number">28</span></span></a>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="29"
+                            data-day-timestamp="1793232000"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1793265972"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, quinta-feira, 29 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">29</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, quinta-feira, 29 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">29</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start clickable"
+                            data-day="30"
+                            data-day-timestamp="1793318400"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1793352372"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, sexta-feira, 30 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">30</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, sexta-feira, 30 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">30</span></span></span>
+                            </div>
+                        </td>
+                        <td class="day text-sm-center text-md-start weekend clickable"
+                            data-day="31"
+                            data-day-timestamp="1793404800"
+                            data-drop-zone="month-view-day"
+                            data-region="day"
+                            data-new-event-timestamp="1793438772"
+                            >
+                            <div class="d-none d-md-block hidden-phone text-xs-center">
+                                <span class="visually-hidden">Sem eventos, sábado, 31 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">31</span></span></span>
+                            </div>
+                            <div class="d-md-none hidden-desktop hidden-tablet">
+                                <span class="visually-hidden">Sem eventos, sábado, 31 de outubro</span>
+                                    <span aria-hidden="true"><span class="day-number-circle"><span class="day-number">31</span></span></span>
+                            </div>
+                        </td>
+                        <td class="dayblank">&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div></div><div class="footer"><div class="bottom">
+        <span class="footer-link">
+            <a href="https://elearning.ua.pt/calendar/view.php?view=month&amp;time=1793179572&amp;course=1">Calendário completo</a>
+        </span>
+        <span class="footer-link">
+            <a href="https://elearning.ua.pt/calendar/managesubscriptions.php?course=1">Importar/exportar calendários</a>
+        </span>
+</div></div></div></section><span class="skip-block-to" id="sb-3"></span><a class="skip skip-block" id="fsb-4" href="#sb-4">Ignorar Itens acedidos recentemente</a><section id="inst350469" class="block_recentlyaccesseditems block mb-3" role="region" data-block="recentlyaccesseditems" data-instance-id="350469" aria-labelledby="instance-350469-header"><div class="header"><div id="instance-350469-action" class="block-action block-collapsible" data-instance-id="350469" title="Show / hide the block"></div><div class="title"><div class="block_action"></div><h2 class="d-inline" id="instance-350469-header">Itens acedidos recentemente</h2></div><div class="block-controls"></div></div><div class="content"><div id="block-recentlyaccesseditems-6ae1bfb44c1056ae1bfb3eb9af14" class="block-recentlyaccesseditems block-cards" data-region="recentlyaccesseditems">
+    <div class="container-fluid p-0">
+        <div id="recentlyaccesseditems-view-6ae1bfb44c1056ae1bfb3eb9af14"
+             data-region="recentlyaccesseditems-view"
+             data-noitemsimgurl="https://elearning.ua.pt/theme/image.php/adaptable/block_recentlyaccesseditems/1792578704/items">
+            <div data-region="recentlyaccesseditems-view-content">
+                <div data-region="recentlyaccesseditems-loading-placeholder">
+                    <div class="card mb-1">
+                        <div class="card-body p-2 m-1">
+                            <div class="d-flex flex-row mw-100 align-items-center">
+                                <div class="bg-pulse-grey rounded-circle" style="height: 40px; width: 40px;"></div>
+                                <div class="ps-2" style="flex: 1;">
+                                    <div class="bg-pulse-grey w-100" style="height: 1rem;"></div>
+                                    <div class="bg-pulse-grey w-75 mt-1" style="height: 0.8rem;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    <div class="card mb-1">
+                        <div class="card-body p-2 m-1">
+                            <div class="d-flex flex-row mw-100 align-items-center">
+                                <div class="bg-pulse-grey rounded-circle" style="height: 40px; width: 40px;"></div>
+                                <div class="ps-2" style="flex: 1;">
+                                    <div class="bg-pulse-grey w-100" style="height: 1rem;"></div>
+                                    <div class="bg-pulse-grey w-75 mt-1" style="height: 0.8rem;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    <div class="card mb-1">
+                        <div class="card-body p-2 m-1">
+                            <div class="d-flex flex-row mw-100 align-items-center">
+                                <div class="bg-pulse-grey rounded-circle" style="height: 40px; width: 40px;"></div>
+                                <div class="ps-2" style="flex: 1;">
+                                    <div class="bg-pulse-grey w-100" style="height: 1rem;"></div>
+                                    <div class="bg-pulse-grey w-75 mt-1" style="height: 0.8rem;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    <div class="card mb-1">
+                        <div class="card-body p-2 m-1">
+                            <div class="d-flex flex-row mw-100 align-items-center">
+                                <div class="bg-pulse-grey rounded-circle" style="height: 40px; width: 40px;"></div>
+                                <div class="ps-2" style="flex: 1;">
+                                    <div class="bg-pulse-grey w-100" style="height: 1rem;"></div>
+                                    <div class="bg-pulse-grey w-75 mt-1" style="height: 0.8rem;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    <div class="card mb-1">
+                        <div class="card-body p-2 m-1">
+                            <div class="d-flex flex-row mw-100 align-items-center">
+                                <div class="bg-pulse-grey rounded-circle" style="height: 40px; width: 40px;"></div>
+                                <div class="ps-2" style="flex: 1;">
+                                    <div class="bg-pulse-grey w-100" style="height: 1rem;"></div>
+                                    <div class="bg-pulse-grey w-75 mt-1" style="height: 0.8rem;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                </div>
+            </div>
+        </div>
+        
+    </div>
+</div></div></section><span class="skip-block-to" id="sb-4"></span></aside>
+            </section>
+
+    </div>
+</div><header id="adaptable-page-header-wrapper">
+    <div id="header1" class="above-header">
+        <div class="container">
+            <nav class="navbar navbar-expand btco-hover-menu">
+                <button class="navbar-toggler nav-link aabtn d-block d-lg-none px-1 my-1 border-0" data-toggler="drawers" data-action="toggle" data-target="theme_adaptable-drawers-primary">
+                    <i aria-hidden="true" class="fa fa-bars afaicon fa-fw"></i>
+                    <span class="visually-hidden">Painel lateral</span>
+                </button>
+
+                <div class="collapse navbar-collapse">
+                
+                    <ul id="adaptable-user-nav" class="navbar-nav ms-auto my-auto">
+                        
+
+                        <li class="nav-item navbarsearchsocial me-1 me-lg-0 my-auto d-md-block d-lg-none my-auto">
+                            <div id="searchinput-navbar-6ae1bfb45fa7e6ae1bfb3eb9af30" class="simplesearchform adsimplesearchform">
+    <div class="collapse" id="searchform-navbar-6ae1bfb45fa7e6ae1bfb3eb9af30">
+        <form autocomplete="off" action="https://elearning.ua.pt/course/search.php" method="get" accept-charset="utf-8" class="mform d-flex flex-wrap align-items-center searchform-navbar">
+                <input type="hidden" name="context" value="475275">
+            <div class="input-group">
+                <input type="text"
+                    id="searchinput-6ae1bfb45fa7e6ae1bfb3eb9af30"
+                    class="form-control withclear"
+                    placeholder="Course search"
+                    aria-label="Course search"
+                    name="q"
+                    data-region="input"
+                    autocomplete="off"
+                >
+                <label for="searchinput-6ae1bfb45fa7e6ae1bfb3eb9af30">
+                    <span class="visually-hidden">Course search</span>
+                </label>
+                <button class="btn btn-close adsimplesearchclose"
+                    data-action="closesearch"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#searchform-navbar-6ae1bfb45fa7e6ae1bfb3eb9af30"
+                    type="button"
+                >
+                    <i class="afaicon fa fa-xmark fa-fw" aria-hidden="true"  ></i>
+                    <span class="visually-hidden">Fechar</span>
+                </button>
+                <button type="submit" class="btn btn-submit" data-action="submit">
+                    <i class="afaicon fa fa-magnifying-glass fa-fw" aria-hidden="true"  ></i>
+                    <span class="visually-hidden">Course search</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    <button
+        class="rounded-0 nav-link icon-no-margin"
+        data-bs-toggle="collapse"
+        data-bs-target="#searchform-navbar-6ae1bfb45fa7e6ae1bfb3eb9af30"
+        data-action="opensearch"
+        type="button"
+        aria-expanded="false"
+        aria-controls="searchform-navbar-6ae1bfb45fa7e6ae1bfb3eb9af30"
+        title="Alternar a entrada da pesquisa"
+    >
+        <i class="afaicon fa fa-magnifying-glass fa-fw" aria-hidden="true"  ></i>
+        <span class="visually-hidden">Alternar a entrada da pesquisa</span>
+    </button>
+</div>
+                        </li>
+
+                        <li id="nav-popover-container" class="my-auto me-1 me-lg-0 d-flex">
+                            <div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="63975"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link icon-no-margin"
+        data-region="popover-region-toggle"
+        aria-controls="popover-region-container-6ae1bfb462ae56ae1bfb3eb9af32"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-label="  Mostrar janela da notificação com 36 notificações novas  "
+        title="  Mostrar janela da notificação com 36 notificações novas  "
+        tabindex="0"
+        role="button">
+                <i class="afaicon fa fa-bell fa-fw" aria-hidden="true"  ></i>
+        <div
+            class="count-container "
+            data-region="count-container"
+            aria-hidden=true
+        >
+            36
+        </div>
+
+    </div>
+    <div         aria-modal="true"
+        tabindex="-1"
+
+        id="popover-region-container-6ae1bfb462ae56ae1bfb3eb9af32"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-hidden="true"
+        aria-label="Janela da notificação"
+        role="dialog">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notificações</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button btn btn-sm btn-link m-0 py-0 icon-no-margin"
+           href="#"
+           title="Marcar todas como lidas"
+           data-action="mark-all-read"
+           role="button"
+           aria-label="Marcar todas como lidas">
+            <span class="normal-icon"><i class="afaicon fa fa-check fa-fw" aria-hidden="true"  ></i></span>
+            <span class="loading-icon icon-no-margin ">
+                <i class="afaicon fa fa-spinner fa-spin fa-fw"  title="A carregar" role="img" aria-label="A carregar"></i>
+            </span>
+            <span aria-live="polite" class="visually-hidden" data-region="notification-read-feedback"></span>
+        </a>
+            <a href="https://elearning.ua.pt/message/notificationpreferences.php"
+               title="Preferências das notificações"
+               aria-label="Preferências das notificações"
+               class="btn btn-sm btn-link m-0 py-0 icon-no-margin" >
+                <i class="afaicon fa fa-gear fa-fw" aria-hidden="true"  ></i></a>
+        <button type="button" class="btn btn-sm btn-link m-0 py-0 icon-no-margin" aria-label="Fechar" title="Fechar" data-action="close-notification-popover">
+            <i class="afaicon fa fa-xmark fa-fw" aria-hidden="true"  ></i>
+        </button>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">Não tem notificações</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin ">
+                <i class="afaicon fa fa-spinner fa-spin fa-fw"  title="A carregar" role="img" aria-label="A carregar"></i>
+            </span>
+        </div>
+                <a class="see-all-link"
+                    href="https://elearning.ua.pt/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Ver todas</div>
+                    </div>
+                </a>
+    </div>
+</div>
+                        </li>
+
+                        <li class="nav-item dropdown my-auto langmenu"><a href="https://elearning.ua.pt/my/index.php" class="nav-link dropdown-toggle my-auto" role="button" id="langmenu1" aria-haspopup="true" aria-expanded="false" aria-controls="dropdownlangmenu1" data-target="https://elearning.ua.pt/my/index.php" data-bs-toggle="dropdown" title="Idioma"><i aria-hidden="true" class="fa-lg fa fa-globe afaicon fa-fw"></i><span class="ms-1 langdesc">Português - Portugal ‎(pt)‎</span></a><ul role="menu" class="dropdown-menu" id="dropdownlangmenu1" aria-labelledby="langmenu1"><li><a title="Deutsch ‎(de)‎" class="dropdown-item" href="https://elearning.ua.pt/my/index.php?lang=de">Deutsch ‎(de)‎</a></li><li><a title="English ‎(en)‎" class="dropdown-item" href="https://elearning.ua.pt/my/index.php?lang=en">English ‎(en)‎</a></li><li><a title="Español - Internacional ‎(es)‎" class="dropdown-item" href="https://elearning.ua.pt/my/index.php?lang=es">Español - Internacional ‎(es)‎</a></li><li><a title="Français ‎(fr)‎" class="dropdown-item" href="https://elearning.ua.pt/my/index.php?lang=fr">Français ‎(fr)‎</a></li><li><a title="Italiano ‎(it)‎" class="dropdown-item" href="https://elearning.ua.pt/my/index.php?lang=it">Italiano ‎(it)‎</a></li><li><a title="Português - Portugal ‎(pt)‎" class="dropdown-item" href="https://elearning.ua.pt/my/index.php?lang=pt">Português - Portugal ‎(pt)‎</a></li></ul></li>
+
+                        
+
+                        <li class="nav-item me-1 me-lg-0 dropdown"><div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items" id="action-menu-0" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-0-menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a
+                            href="#"
+                            tabindex="0"
+                            class="nav-link dropdown-toggle icon-no-margin"
+                            id="action-menu-toggle-0"
+                            aria-label="Menu do utilizador"
+                            data-bs-toggle="dropdown"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            aria-controls="action-menu-0-menu"
+                        >
+                            
+                            <span class="userbutton"><span class="usertext me-1">SANTIAGO FERREIRA DE ALMEIDA 139931</span><span class="avatars"><span class="avatar current"><span class="userinitials size-35" title="SANTIAGO FERREIRA DE ALMEIDA 139931" aria-label="SANTIAGO FERREIRA DE ALMEIDA 139931" role="img">S1</span></span></span></span>
+                                
+                            <b class="caret"></b>
+                        </a>
+                            <div class="dropdown-menu menu dropdown-menu-end" id="action-menu-0-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-0" role="menu">
+                                                                <a href="https://elearning.ua.pt/my" class="dropdown-item menu-action" role="menuitem" tabindex="-1" >
+                                <span class="menu-action-text"><i aria-hidden="true" class="fa fa-dashboard afaicon fa-fw"></i>Painel do utilizador</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://elearning.ua.pt/user/profile.php" class="dropdown-item menu-action" role="menuitem" tabindex="-1" >
+                                <span class="menu-action-text"><i aria-hidden="true" class="fa fa-user afaicon fa-fw"></i>Ver perfil</span>
+                        </a>
+                                                                <a href="https://elearning.ua.pt/user/edit.php" class="dropdown-item menu-action" role="menuitem" tabindex="-1" >
+                                <span class="menu-action-text"><i aria-hidden="true" class="fa fa-cog afaicon fa-fw"></i>Editar perfil</span>
+                        </a>
+                                                                <a href="https://elearning.ua.pt/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" tabindex="-1" >
+                                <span class="menu-action-text"><i aria-hidden="true" class="fa fa-list-alt afaicon fa-fw"></i>Pauta</span>
+                        </a>
+                                                                <a href="https://elearning.ua.pt/user/preferences.php" class="dropdown-item menu-action" role="menuitem" tabindex="-1" >
+                                <span class="menu-action-text"><i aria-hidden="true" class="fa fa-cog afaicon fa-fw"></i>Preferências</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://elearning.ua.pt/calendar/view.php" class="dropdown-item menu-action" role="menuitem" tabindex="-1" >
+                                <span class="menu-action-text"><i aria-hidden="true" class="fa fa-calendar afaicon fa-fw"></i>Calendário</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://elearning.ua.pt/user/profile.php" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" tabindex="-1" >
+                                <span class="menu-action-text">Perfil</span>
+                        </a>
+                                                                <a href="https://elearning.ua.pt/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" tabindex="-1" >
+                                <span class="menu-action-text">Pauta</span>
+                        </a>
+                                                                <a href="https://elearning.ua.pt/calendar/view.php?view=month" class="dropdown-item menu-action" role="menuitem" data-title="calendar,core_calendar" tabindex="-1" >
+                                <span class="menu-action-text">Calendário</span>
+                        </a>
+                                                                <a href="https://elearning.ua.pt/user/files.php" class="dropdown-item menu-action" role="menuitem" data-title="privatefiles,moodle" tabindex="-1" >
+                                <span class="menu-action-text">Ficheiros privados</span>
+                        </a>
+                                                                <a href="https://elearning.ua.pt/reportbuilder/index.php" class="dropdown-item menu-action" role="menuitem" data-title="reports,core_reportbuilder" tabindex="-1" >
+                                <span class="menu-action-text">Relatórios</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://elearning.ua.pt/login/logout.php?sesskey=Dvf7F75JGy" class="dropdown-item menu-action" role="menuitem" tabindex="-1" >
+                                <span class="menu-action-text"><i aria-hidden="true" class="fa fa-sign-out afaicon fa-fw"></i>Sair</span>
+                        </a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></div></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div id="page-header" class="main-header-row d-none d-lg-flex">
+        <div class="container">
+            <div class="row d-flex justify-content-start align-items-center h-100">
+                <div class="col-lg-8 p-0">
+                    <div class="bd-highlight d-flex">
+                        <div class="pb-2 pe-3 pt-2 bd-highlight d-none d-lg-inline-block"><img src=//elearning.ua.pt/pluginfile.php/3/theme_adaptable/logo/1792578704/logo-ua.png id="logo" alt="Logo"></div>
+                        <div id="headertitle" class="bd-highlight pt-2 d-none d-lg-inline-block"><h1><span id="sitetitle"><p>Moodle 2026/27</p></span></h1></div>
+                    </div>
+                    <div id="course-header">
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-end">
+                        <div class="headersearch pagelayoutoriginal d-none d-lg-inline-block">
+    <div id="searchinput-navbar-6ae1bfb45fdce6ae1bfb3eb9af31" class="simplesearchform adsimplesearchform">
+    <div class="collapse" id="searchform-navbar-6ae1bfb45fdce6ae1bfb3eb9af31">
+        <form autocomplete="off" action="https://elearning.ua.pt/course/search.php" method="get" accept-charset="utf-8" class="mform d-flex flex-wrap align-items-center searchform-navbar">
+                <input type="hidden" name="context" value="475275">
+            <div class="input-group">
+                <input type="text"
+                    id="searchinput-6ae1bfb45fdce6ae1bfb3eb9af31"
+                    class="form-control withclear"
+                    placeholder="Course search"
+                    aria-label="Course search"
+                    name="q"
+                    data-region="input"
+                    autocomplete="off"
+                >
+                <label for="searchinput-6ae1bfb45fdce6ae1bfb3eb9af31">
+                    <span class="visually-hidden">Course search</span>
+                </label>
+                <button class="btn btn-close adsimplesearchclose"
+                    data-action="closesearch"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#searchform-navbar-6ae1bfb45fdce6ae1bfb3eb9af31"
+                    type="button"
+                >
+                    <i class="afaicon fa fa-xmark fa-fw" aria-hidden="true"  ></i>
+                    <span class="visually-hidden">Fechar</span>
+                </button>
+                <button type="submit" class="btn btn-submit" data-action="submit">
+                    <i class="afaicon fa fa-magnifying-glass fa-fw" aria-hidden="true"  ></i>
+                    <span class="visually-hidden">Course search</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    <button
+        class="rounded-0 nav-link icon-no-margin"
+        data-bs-toggle="collapse"
+        data-bs-target="#searchform-navbar-6ae1bfb45fdce6ae1bfb3eb9af31"
+        data-action="opensearch"
+        type="button"
+        aria-expanded="false"
+        aria-controls="searchform-navbar-6ae1bfb45fdce6ae1bfb3eb9af31"
+        title="Alternar a entrada da pesquisa"
+    >
+        <i class="afaicon fa fa-magnifying-glass fa-fw" aria-hidden="true"  ></i>
+        <span class="visually-hidden">Alternar a entrada da pesquisa</span>
+    </button>
+</div>
+</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        <div id="main-navbar" class="d-none d-lg-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="navbar navbar-expand btco-hover-menu">
+                            <nav aria-label="Site links">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a title="Início" class="nav-link" href="https://elearning.ua.pt/?redirect=0"><i aria-hidden="true" class="fa-lg fa fa-home afaicon fa-fw"></i><span class="menutitle">Início</span></a></li><li class="nav-item"><a title="Painel do utilizador" class="nav-link" href="https://elearning.ua.pt/my/index.php"><i aria-hidden="true" class="fa-lg fa fa-dashboard afaicon fa-fw"></i><span class="menutitle">Painel do utilizador</span></a></li><li class="nav-item"><a title="UC" class="nav-link" href="https://elearning.ua.pt/my/courses.php"><i aria-hidden="true" class="fa-lg fa fa-th afaicon fa-fw"></i><span class="menutitle">UC</span></a></li><li class="nav-item"><a title="Eventos" class="nav-link" href="https://elearning.ua.pt/calendar/view.php"><i aria-hidden="true" class="fa-lg fa fa-calendar afaicon fa-fw"></i><span class="menutitle">Eventos</span></a></li>
+                                </ul>
+                            </nav>
+        
+                            <ul class="navbar-nav ms-auto d-flex flex-wrap">
+        
+                                <li id="editingbutton" class="nav-item mx-0 my-auto">
+                                    <div class="singlebutton">
+    <form method="post" action="https://elearning.ua.pt/my/index.php" >
+            <input type="hidden" name="edit" value="1">
+            <input type="hidden" name="sesskey" value="Dvf7F75JGy">
+        <button type="submit" class="btn btn-secondary"
+            id="single_button6ae1bfb3eb9af1"
+            
+            
+            >Personalizar esta página</button>
+    </form>
+</div>
+                                </li>
+        
+                                <li class="nav-item mx-0 hbll">
+                                    <a class="nav-link moodlewidth" href="javascript:void(0);" title="Ecrã completo">
+                                        <i class="afaicon fa fa-expand fa-lg" aria-hidden="true"></i>
+                                        <span class="zoomdesc">Ecrã completo</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-0 sbll">
+                                    <a class="nav-link moodlewidth" href="javascript:void(0);" title="Exibição padrão">
+                                        <i class="afaicon fa fa-compress fa-lg" aria-hidden="true"></i>
+                                        <span class="zoomdesc">Exibição padrão</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</header>
+
+
+<div  class="drawer drawer-left drawer-primary d-print-none not-initialized" data-region="fixed-drawer" id="theme_adaptable-drawers-primary" data-preference="" data-state="show-drawer-primary" data-forceopen="0" data-close-on-resize="1">
+    <div class="drawerheader">
+        <div class="drawerheading">
+                        
+
+        </div>
+        <div class="draweractions">
+            <div class="drawerheadercontent">
+                
+            </div>
+            <button
+                class="btn btn-icon icon-size-3 drawertoggle"
+                data-toggler="drawers"
+                data-action="closedrawer"
+                data-target="theme_adaptable-drawers-primary"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Fechar painel"
+                aria-label="Fechar painel"
+            >
+                    <i class="afaicon fa fa-xmark fa-fw" aria-hidden="true"  ></i>
+            </button>
+        </div>
+    </div>
+    <div class="drawercontent drag-container" data-usertour="scroller">
+                <div class="list-group">
+                <a href="https://elearning.ua.pt/?redirect=0" class="list-group-item list-group-item-action" >
+                    <i aria-hidden="true" class="fa-lg fa fa-home afaicon fa-fw"></i><span class="menutitle">Início</span>
+                </a>
+                <a href="https://elearning.ua.pt/my/index.php" class="list-group-item list-group-item-action" >
+                    <i aria-hidden="true" class="fa-lg fa fa-dashboard afaicon fa-fw"></i><span class="menutitle">Painel do utilizador</span>
+                </a>
+                <a href="https://elearning.ua.pt/my/courses.php" class="list-group-item list-group-item-action" >
+                    <i aria-hidden="true" class="fa-lg fa fa-th afaicon fa-fw"></i><span class="menutitle">UC</span>
+                </a>
+                <a href="https://elearning.ua.pt/calendar/view.php" class="list-group-item list-group-item-action" >
+                    <i aria-hidden="true" class="fa-lg fa fa-calendar afaicon fa-fw"></i><span class="menutitle">Eventos</span>
+                </a>
+                    <div id="editingbuttonmobile" class="list-group-item list-group-item-action">
+                        <div class="singlebutton">
+    <form method="post" action="https://elearning.ua.pt/my/index.php" >
+            <input type="hidden" name="edit" value="1">
+            <input type="hidden" name="sesskey" value="Dvf7F75JGy">
+        <button type="submit" class="btn btn-secondary"
+            id="single_button6ae1bfb3eb9af1"
+            
+            
+            >Personalizar esta página</button>
+    </form>
+</div>
+                    </div>
+        </div>
+
+    </div>
+</div><div id="page" class="drawers"><div class="drawer-toggles d-flex">
+    <div class="drawer-toggler drawer-left-toggle ms-auto d-print-none">
+        <button
+            class="btn icon-no-margin"
+            data-toggler="drawers"
+            data-action="toggle"
+            data-target="theme_adaptable-drawers-sidepost"
+            data-bs-toggle="tooltip"
+            data-bs-placement="left"
+            title="Abrir painel dos blocos"
+        >
+            <span class="visually-hidden">Abrir painel dos blocos</span>
+            <span class="dir-ltr-hide"><img class="icon" alt="" aria-hidden="true" src="https://elearning.ua.pt/theme/image.php/adaptable/core/1792578704/e/sidebar_right" /></span>
+            <span class="dir-rtl-hide"><img class="icon" alt="" aria-hidden="true" src="https://elearning.ua.pt/theme/image.php/adaptable/core/1792578704/e/sidebar_left" /></span>
+        </button>
+    </div>
+</div><div id="maincontainer" class="container outercont"><div id="page-content" class="row"><div id="region-main-box" class="col-12"><section id="region-main"><span class="notifications" id="user-notifications"></span><div role="main"><span id="maincontent"></span><aside id="block-region-content" class="block-region" data-blockregion="content" data-droptarget="1"><h2 class="visually-hidden">Blocos</h2><a class="skip skip-block" id="fsb-5" href="#sb-5">Ignorar Avisos</a><section id="inst350475" class="block_html block mb-3" role="region" data-block="html" data-instance-id="350475" aria-labelledby="instance-350475-header"><div class="header"><div id="instance-350475-action" class="block-action block-collapsible" data-instance-id="350475" title="Show / hide the block"></div><div class="title"><div class="block_action"></div><h2 class="d-inline" id="instance-350475-header">Avisos</h2></div><div class="block-controls"></div></div><div class="content"><div class="no-overflow"><p>Caros/as docentes e estudantes,<br> <br>No âmbito da implementação do <strong>Referencial para a Utilização de Inteligência Artificial na Universidade de Aveiro</strong>, encontra-se disponível um conjunto de recursos e sessões formativas para promover uma utilização ética, crítica e responsável da IA no contexto académico. Entre os recursos já disponíveis incluem-se guias, recomendações e outros materiais orientadores:<br> <br>Se és estudante: <a href="https://www.ua.pt/pt/inovacaopedagogica/iaestudante" target="_blank" rel="noopener">https://www.ua.pt/pt/inovacaopedagogica/iaestudante</a><br>Se é docente: <a href="https://www.ua.pt/pt/inovacaopedagogica/referencialia" target="_blank" rel="noopener">https://www.ua.pt/pt/inovacaopedagogica/referencialia</a></p></div></div></section><span class="skip-block-to" id="sb-5"></span><a class="skip skip-block" id="fsb-6" href="#sb-6">Ignorar Minhas UC</a><section id="inst350472" class="block_myoverview block mb-3" role="region" data-block="myoverview" data-instance-id="350472" aria-labelledby="instance-350472-header"><div class="header"><div id="instance-350472-action" class="block-action block-collapsible" data-instance-id="350472" title="Show / hide the block"></div><div class="title"><div class="block_action"></div><h2 class="d-inline" id="instance-350472-header">Minhas UC</h2></div><div class="block-controls"></div></div><div class="content"><div id="block-myoverview-6ae1bfb4565b16ae1bfb3eb9af15" class="block-myoverview block-cards" data-region="myoverview">
+    <div role="search" data-region="filter" class="d-flex align-items-center my-2" aria-label="Controlos do bloco Minhas UC">
+        <div class="d-flex flex-wrap gap-1 align-items-center w-100">
+            <div class="dropdown mb-1 me-1">
+                <button id="groupingdropdown" type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Lista pendente de agrupamento">
+                    <span data-active-item-text>
+                        
+                        Todas
+                        
+                        
+                        
+                        
+                        
+                        
+                    </span>
+                </button>
+                <ul class="dropdown-menu" role="menu" data-show-active-item data-skip-active-class="true" data-active-item-text aria-labelledby="groupingdropdown">
+                    <li class="dropdown-divider" role="presentation">
+                        <span class="filler">&nbsp;</span>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#" data-filter="grouping" data-value="all" data-pref="all" aria-label="Mostrar todas as UC exceto as removidas da visualização" aria-controls="courses-view-6ae1bfb4565b16ae1bfb3eb9af15" role="menuitem" aria-current="true">
+                            Todas
+                        </a>
+                    </li>
+                    <li class="dropdown-divider" role="presentation">
+                        <span class="filler">&nbsp;</span>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#" data-filter="grouping" data-value="inprogress" data-pref="inprogress" aria-label="Mostrar UC a decorrer" aria-controls="courses-view-6ae1bfb4565b16ae1bfb3eb9af15" role="menuitem" >
+                            A decorrer
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#" data-filter="grouping" data-value="future" data-pref="future" aria-label="Mostrar UC futuras" aria-controls="courses-view-6ae1bfb4565b16ae1bfb3eb9af15" role="menuitem" >
+                            Por iniciar
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#" data-filter="grouping" data-value="past" data-pref="past" aria-label="Mostrar UC já terminadas" aria-controls="courses-view-6ae1bfb4565b16ae1bfb3eb9af15" role="menuitem" >
+                            Histórico
+                        </a>
+                    </li>
+                    <li class="dropdown-divider" role="presentation">
+                        <span class="filler">&nbsp;</span>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#" data-filter="grouping" data-value="favourites"  data-pref="favourites" aria-label="Mostrar apenas UC com estrela" aria-controls="courses-view-6ae1bfb4565b16ae1bfb3eb9af15" role="menuitem" >
+                            Com estrela
+                        </a>
+                    <li class="dropdown-divider" role="presentation">
+                        <span class="filler">&nbsp;</span>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#" data-filter="grouping" data-value="hidden"  data-pref="hidden" aria-label="Mostrar UC removidas da visualização" aria-controls="courses-view-6ae1bfb4565b16ae1bfb3eb9af15" role="menuitem" >
+                            Removidas da visualização
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mb-1 me-1 flex-grow-1">
+    <div id="searchform-auto-6ae1bfb4565b16ae1bfb3eb9af15" class="d-flex flex-wrap align-items-center simplesearchform">
+    <div class="input-group searchbar w-100" >
+        <label for="searchinput-6ae1bfb4565b16ae1bfb3eb9af15" id="searchinput-label-6ae1bfb4565b16ae1bfb3eb9af15">
+            <span class="visually-hidden">Pesquisar UC</span>
+        </label>
+        <input
+           type="text"
+           data-region="input"
+           data-action="search"
+           id="searchinput-6ae1bfb4565b16ae1bfb3eb9af15"
+           class="form-control withclear rounded"
+           placeholder="Pesquisar"
+           name="search"
+           value=""
+           autocomplete="off"
+           
+        >
+        <button
+            class="btn btn-clear d-none"
+            data-action="clearsearch"
+            type="button"
+        >
+           <i class="afaicon fa fa-xmark fa-fw" aria-hidden="true"  ></i>
+            <span class="visually-hidden">Limpar entrada da pesquisa</span>
+        </button>
+    </div>
+</div>
+</div>
+
+            
+            <div class="mb-1 me-1 d-flex flex-wrap align-items-center">
+                <div class="dropdown">
+                    <button id="sortingdropdown" type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Lista pendente de ordenação">
+                        <span data-active-item-text>
+                            
+                            
+                            Ordenar por nome curto
+                            
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" data-show-active-item data-skip-active-class="true" aria-labelledby="sortingdropdown">
+                        <li>
+                            <a class="dropdown-item" href="#" data-filter="sort" data-pref="title" data-value="fullname" aria-controls="courses-view-6ae1bfb4565b16ae1bfb3eb9af15" role="menuitem" >
+                                Ordenar por nome da UC
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#" data-filter="sort" data-pref="shortname" data-value="shortname" aria-controls="courses-view-6ae1bfb4565b16ae1bfb3eb9af15" role="menuitem" aria-current="true">
+                                Ordenar por nome curto
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#" data-filter="sort" data-pref="lastaccessed" data-value="ul.timeaccess desc" aria-controls="courses-view-6ae1bfb4565b16ae1bfb3eb9af15" role="menuitem" >
+                                Ordenar por último acesso
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#" data-filter="sort" data-pref="startdate" data-value="startdate" aria-controls="courses-view-6ae1bfb4565b16ae1bfb3eb9af15" role="menuitem" >
+                                Ordenar por data de início
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+                <div class="dropdown mb-1">
+                    <button id="displaydropdown" type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    aria-label="Mostrar lista pendente">
+                        <span data-active-item-text>
+                            Cartões
+                            
+                            
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" data-show-active-item data-skip-active-class="true" aria-labelledby="displaydropdown">
+                            <li>
+                                <a class="dropdown-item" href="#" data-display-option="display" data-value="card" data-pref="card" aria-label="Alternar para vista de cartões" aria-controls="courses-view-6ae1bfb4565b16ae1bfb3eb9af15" role="menuitem" aria-current="true">
+                                    Cartões
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" data-display-option="display" data-value="list" data-pref="list" aria-label="Alternar para a vista de Lista" aria-controls="courses-view-6ae1bfb4565b16ae1bfb3eb9af15" role="menuitem" >
+                                    Lista
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" data-display-option="display" data-value="summary" data-pref="summary" aria-label="Alternar para a vista de Descrição" aria-controls="courses-view-6ae1bfb4565b16ae1bfb3eb9af15" role="menuitem" >
+                                    Descrição
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-0">
+        <div id="courses-view-6ae1bfb4565b16ae1bfb3eb9af15"
+            data-region="courses-view"
+            data-display="card"
+            data-grouping="all"
+            data-customfieldname=""
+            data-customfieldvalue=""
+            data-sort="shortname"
+            data-prev-display="card"
+            data-paging="12"
+            data-nocoursesimg="https://elearning.ua.pt/theme/image.php/adaptable/block_myoverview/1792578704/courses"
+            data-totalcoursecount="5"
+            data-displaycategories="off"
+            data-newcourseurl="">
+            <div data-region="course-view-content">
+                <div data-region="loading-placeholder-content" aria-hidden="true">
+                        <div class="card-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 mx-0 flex-nowrap overflow-hidden" style="height: 13rem">
+                            <div class="col d-flex px-1"><div class="card border-0 px-1">
+    <div class="card-img-top bg-pulse-grey w-100" style="height: 7rem">
+    </div>
+    <div class="card-body pe-1 course-info-container">
+        <div class="bg-pulse-grey w-100" style="height: 1rem"></div>
+    </div>
+</div>
+</div>
+                            <div class="col d-flex px-1"><div class="card border-0 px-1">
+    <div class="card-img-top bg-pulse-grey w-100" style="height: 7rem">
+    </div>
+    <div class="card-body pe-1 course-info-container">
+        <div class="bg-pulse-grey w-100" style="height: 1rem"></div>
+    </div>
+</div>
+</div>
+                            <div class="col d-flex px-1"><div class="card border-0 px-1">
+    <div class="card-img-top bg-pulse-grey w-100" style="height: 7rem">
+    </div>
+    <div class="card-body pe-1 course-info-container">
+        <div class="bg-pulse-grey w-100" style="height: 1rem"></div>
+    </div>
+</div>
+</div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div></section><span class="skip-block-to" id="sb-6"></span></aside></div></section></div></div><div class="hidden-blocks"><h3>Blocks in this area will only be visible to users that can edit blocks on this page</h3><aside id="block-region-hidden" class="d-flex block-region" data-blockregion="hidden" data-droptarget="1"><h2 class="visually-hidden">Blocos</h2></aside></div></div><footer id="page-footer" class="d-none d-lg-block">
+    
+    <div class="container"><div class="row"><div class="left-col col-4"><h3>Tutoriais</h3><div class="text_to_html"><p><a href="https://www.ua.pt/pt/inovacaopedagogica/moodle" target="_blank" rel="noreferrer noopener">Tutoriais para docentes</a></p></div></div><div class="left-col col-4"><h3>Suporte</h3><div class="text_to_html"><p><a href="https://bud.ua.pt/" target="_blank" rel="noreferrer noopener">bud.ua.pt</a><br />Extensão: 22299<br />Telf: +351 234 370099</p></div></div><div class="left-col col-4"><h3>Links rápidos</h3><div class="text_to_html"><p><a href="https://www.ua.pt/" target="_blank" rel="noreferrer noopener">Universidade de Aveiro</a><br /><a href="https://uaonline.ua.pt/pub/default.asp" target="_blank" rel="noreferrer noopener">Notícias UA</a></p></div></div></div></div>
+    <div class="info container2 clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="tool_usertours-resettourcontainer"></div>
+                <div class="col-md-4 my-md-0 my-2 helplink"></div>
+                <div class="col-md-4 my-md-0 my-2"><div class="tool_dataprivacy"><a href="https://elearning.ua.pt/admin/tool/dataprivacy/summary.php">Resumo da retenção de dados</a></div><div><a class="mobilelink" href="https://download.moodle.org/mobile?version=2026042002&amp;lang=pt&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Obter a Aplicação móvel</a></div></div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-md-0 my-2">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="back-to-top"><i class="fa fa-angle-up "></i></div>
+
+
+</div>
+</div>
+
+<script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://elearning.ua.pt/lib/requirejs.php/1792578704/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://elearning.ua.pt/lib/javascript.php/1792578704/lib/jquery/jquery-3.7.1.min',
+        jqueryui: 'https://elearning.ua.pt/lib/javascript.php/1792578704/lib/jquery/ui-1.14.1/jquery-ui.min',
+        jqueryprivate: 'https://elearning.ua.pt/lib/javascript.php/1792578704/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://elearning.ua.pt/lib/javascript.php/1792578704/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+M.util.js_pending('filter_mathjaxloader/loader'); require(['filter_mathjaxloader/loader'], function(amd) {amd.configure({"mathjaxurl":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@4.0.0\/tex-mml-chtml.js","mathjaxconfig":"MathJax.Hub.Config({\r\nconfig: [\"Accessible.js\", \"Safe.js\"],\r\nerrorSettings: { message: [\"!\"] },\r\nskipStartupTypeset: true,\r\nmessageStyle: \"none\"\r\n});\r\n","lang":"pt"}); M.util.js_complete('filter_mathjaxloader/loader');});;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('pt-BR');
+});;
+M.util.js_pending('filter_syntaxhighlighter/hljs'); require(['filter_syntaxhighlighter/hljs'], function(amd) {amd.initHighlighting(); M.util.js_complete('filter_syntaxhighlighter/hljs');});;
+M.util.js_pending('theme_adaptable/adaptable'); require(['theme_adaptable/adaptable'], function(amd) {amd.init({"rtl":false,"stickynavbar":true}); M.util.js_complete('theme_adaptable/adaptable');});;
+M.util.js_pending('theme_adaptable/pace_init'); require(['theme_adaptable/pace_init'], function(amd) {amd.init("minimal"); M.util.js_complete('theme_adaptable/pace_init');});;
+M.util.js_pending('block_navigation/navblock'); require(['block_navigation/navblock'], function(amd) {amd.init("33"); M.util.js_complete('block_navigation/navblock');});;
+M.util.js_pending('block_settings/settingsblock'); require(['block_settings/settingsblock'], function(amd) {amd.init("36", null); M.util.js_complete('block_settings/settingsblock');});;
+M.util.js_pending('filter_syntaxhighlighter/hljs'); require(['filter_syntaxhighlighter/hljs'], function(amd) {amd.initHighlighting(); M.util.js_complete('filter_syntaxhighlighter/hljs');});;
+
+require(['jquery', 'core_calendar/month_navigation_drag_drop'], function($, DragDrop) {
+    var root = $('#month-navigation-6ae1bfb44741d6ae1bfb3eb9af13-1');
+    DragDrop.init(root);
+});
+;
+
+require([
+    'jquery',
+    'core_calendar/month_view_drag_drop'
+], function(
+    $,
+    DragDrop
+) {
+    var root = $('#month-detailed-6ae1bfb44741d6ae1bfb3eb9af13-1');
+    DragDrop.init(root);
+});
+;
+
+require(['jquery', 'core_calendar/calendar', 'core_calendar/popover'], function($, Calendar, calendarPopover) {
+    const isCalendarBlock = true;
+    Calendar.init($("#calendar-month-6ae1bfb44741d6ae1bfb3eb9af13-1"), isCalendarBlock);
+});
+;
+M.util.js_pending('core_calendar/popover'); require(['core_calendar/popover'], function(amd) {M.util.js_complete('core_calendar/popover');});;
+
+require(
+[
+    'jquery',
+    'block_recentlyaccesseditems/main',
+],
+function(
+    $,
+    Main
+) {
+    var root = $('#block-recentlyaccesseditems-6ae1bfb44c1056ae1bfb3eb9af14');
+
+    Main.init(root);
+});
+;
+M.util.js_pending('theme_adaptable/collapseblock'); require(['theme_adaptable/collapseblock'], function(amd) {amd.collapseBlockInit(); M.util.js_complete('theme_adaptable/collapseblock');});;
+M.util.js_pending('theme_adaptable/collapseblock'); require(['theme_adaptable/collapseblock'], function(amd) {amd.collapseBlockInit(); M.util.js_complete('theme_adaptable/collapseblock');});;
+M.util.js_pending('theme_adaptable/collapseblock'); require(['theme_adaptable/collapseblock'], function(amd) {amd.collapseBlockInit(); M.util.js_complete('theme_adaptable/collapseblock');});;
+
+M.util.js_pending('theme_boost/drawers:load');
+require(['theme_boost/drawers'], function() {
+    M.util.js_complete('theme_boost/drawers:load');
+});
+;
+M.util.js_pending('filter_syntaxhighlighter/hljs'); require(['filter_syntaxhighlighter/hljs'], function(amd) {amd.initHighlighting(); M.util.js_complete('filter_syntaxhighlighter/hljs');});;
+
+require(
+[
+    'jquery',
+    'block_myoverview/main',
+],
+function(
+    $,
+    Main
+) {
+    var root = $('#block-myoverview-6ae1bfb4565b16ae1bfb3eb9af15');
+    Main.init(root);
+});
+;
+M.util.js_pending('filter_syntaxhighlighter/hljs'); require(['filter_syntaxhighlighter/hljs'], function(amd) {amd.initHighlighting(); M.util.js_complete('filter_syntaxhighlighter/hljs');});;
+
+require(
+[],
+function() {
+    const uniqid = "6ae1bfb45fa7e6ae1bfb3eb9af30";
+    const container = document.getElementById('searchinput-navbar-' + uniqid);
+    const collapse = container.querySelector('#searchform-navbar-' + uniqid);
+    const opensearch = container.querySelector('[data-action="opensearch"]');
+    const input = collapse.querySelector('[data-region="input"]');
+    const submit = collapse.querySelector('[data-action="submit"]');
+
+    submit.addEventListener('click', (e) => {
+        if (input.valUE === '') {
+            e.preventDefault();
+        }
+    });
+
+    collapse.addEventListener('hidden.bs.collapse', () => {
+        opensearch.classList.remove('d-none');
+        input.value = '';
+    });
+
+    collapse.addEventListener('show.bs.collapse', () => {
+        opensearch.classList.add('d-none');
+    });
+
+    collapse.addEventListener('shown.bs.collapse', () => {
+        input.focus();
+    });
+});
+;
+
+require(
+[],
+function() {
+    const uniqid = "6ae1bfb45fdce6ae1bfb3eb9af31";
+    const container = document.getElementById('searchinput-navbar-' + uniqid);
+    const collapse = container.querySelector('#searchform-navbar-' + uniqid);
+    const opensearch = container.querySelector('[data-action="opensearch"]');
+    const input = collapse.querySelector('[data-region="input"]');
+    const submit = collapse.querySelector('[data-action="submit"]');
+
+    submit.addEventListener('click', (e) => {
+        if (input.valUE === '') {
+            e.preventDefault();
+        }
+    });
+
+    collapse.addEventListener('hidden.bs.collapse', () => {
+        opensearch.classList.remove('d-none');
+        input.value = '';
+    });
+
+    collapse.addEventListener('show.bs.collapse', () => {
+        opensearch.classList.add('d-none');
+    });
+
+    collapse.addEventListener('shown.bs.collapse', () => {
+        input.focus();
+    });
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, Controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new Controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+M.util.js_pending('theme_boost/drawers:load');
+require(['theme_boost/drawers'], function() {
+    M.util.js_complete('theme_boost/drawers:load');
+});
+;
+M.util.js_pending('filter_syntaxhighlighter/hljs'); require(['filter_syntaxhighlighter/hljs'], function(amd) {amd.initHighlighting(); M.util.js_complete('filter_syntaxhighlighter/hljs');});;
+M.util.js_pending('filter_syntaxhighlighter/hljs'); require(['filter_syntaxhighlighter/hljs'], function(amd) {amd.initHighlighting(); M.util.js_complete('filter_syntaxhighlighter/hljs');});;
+M.util.js_pending('filter_syntaxhighlighter/hljs'); require(['filter_syntaxhighlighter/hljs'], function(amd) {amd.initHighlighting(); M.util.js_complete('filter_syntaxhighlighter/hljs');});;
+M.util.js_pending('filter_syntaxhighlighter/hljs'); require(['filter_syntaxhighlighter/hljs'], function(amd) {amd.initHighlighting(); M.util.js_complete('filter_syntaxhighlighter/hljs');});;
+M.util.js_pending('filter_syntaxhighlighter/hljs'); require(['filter_syntaxhighlighter/hljs'], function(amd) {amd.initHighlighting(); M.util.js_complete('filter_syntaxhighlighter/hljs');});;
+M.util.js_pending('filter_syntaxhighlighter/hljs'); require(['filter_syntaxhighlighter/hljs'], function(amd) {amd.initHighlighting(); M.util.js_complete('filter_syntaxhighlighter/hljs');});;
+
+    M.util.js_pending('theme_boost/loader');
+    require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
+        Drawer.init();
+        M.util.js_complete('theme_boost/loader');
+    });
+;
+M.util.js_pending('theme_adaptable/collapseblock'); require(['theme_adaptable/collapseblock'], function(amd) {amd.collapseBlockInit(); M.util.js_complete('theme_adaptable/collapseblock');});;
+M.util.js_pending('theme_adaptable/collapseblock'); require(['theme_adaptable/collapseblock'], function(amd) {amd.collapseBlockInit(); M.util.js_complete('theme_adaptable/collapseblock');});;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(475275, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
+M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});;
+M.util.js_pending('core/storage_validation'); require(['core/storage_validation'], function(amd) {amd.init(1793179571); M.util.js_complete('core/storage_validation');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\u00daltima altera\u00e7\u00e3o","name":"Designa\u00e7\u00e3o","error":"Erro","info":"Informa\u00e7\u00e3o","yes":"Sim","no":"N\u00e3o","viewallcourses":"Ver todas as disciplinas","cancel":"Cancelar","confirm":"Confirma\u00e7\u00e3o","areyousure":"Tem a certeza?","closebuttontitle":"Fechar","unknownerror":"Erro desconhecido","file":"Ficheiro","url":"URL","collapseall":"Contrair tudo","expandall":"Expandir tudo"},"repository":{"type":"Tipo","size":"Tamanho","invalidjson":"String JSON inv\u00e1lida","nofilesattached":"Sem ficheiros selecionados","filepicker":"Selecionar ficheiro","logout":"Sair","nofilesavailable":"N\u00e3o existem ficheiros dispon\u00edveis","norepositoriesavailable":"Nenhum dos seus reposit\u00f3rios atuais pode devolver ficheiros no formato indicado.","fileexistsdialogheader":"Ficheiro existente","fileexistsdialog_editor":"Um ficheiro com esse nome j\u00e1 se encontra anexo ao texto que est\u00e1 a editar.","fileexistsdialog_filemanager":"Um ficheiro com esse nome j\u00e1 se encontra anexo","renameto":"Renomear para \"{$a}\"","referencesexist":"Existem {$a} hiperliga\u00e7\u00f5es para este ficheiro","select":"Selecionar","invalidfiletypetitle":"Tipo de ficheiro n\u00e3o aceite"},"admin":{"confirmdeletecomments":"Tem a certeza de que pretende apagar os coment\u00e1rios selecionados?","confirmation":"Confirma\u00e7\u00e3o"},"debug":{"debuginfo":"Informa\u00e7\u00e3o de depura\u00e7\u00e3o","line":"Linha","stacktrace":"Stack trace"},"langconfig":{"labelsep":":&nbsp;"}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {M.util.help_popups.setup(Y);
+ M.util.js_pending('random6ae1bfb3eb9af33'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random6ae1bfb3eb9af33'); });
+})();
+//]]>
+</script>
+
+
+
+
+
+
+</body></html>�I�S\�           jῳJ�       ?    O^partitionKey=%28https%2Cua.pt%29,:https://elearning.ua.pt/my/ strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Wed, 28 Oct 2026 09:26:11 GMT
+Server: Apache/2.4.62 (Rocky Linux) OpenSSL/3.5.1
+Strict-Transport-Security: max-age=31536000
+Cache-Control: private, pre-check=0, post-check=0, max-age=0, no-transform
+Pragma: no-cache
+Content-Language: pt
+Content-Script-Type: text/javascript
+Content-Style-Type: text/css
+X-UA-Compatible: IE=edge
+Accept-Ranges: none
+X-Frame-Options: sameorigin
+Content-Type: text/html; charset=utf-8
+ original-response-headers Date: Wed, 28 Oct 2026 09:26:11 GMT
+Server: Apache/2.4.62 (Rocky Linux) OpenSSL/3.5.1
+Strict-Transport-Security: max-age=31536000
+Expires: 
+Cache-Control: private, pre-check=0, post-check=0, max-age=0, no-transform
+Pragma: no-cache
+Content-Language: pt
+Content-Script-Type: text/javascript
+Content-Style-Type: text/css
+X-UA-Compatible: IE=edge
+Accept-Ranges: none
+X-Frame-Options: sameorigin
+Keep-Alive: timeout=5, max=94
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+ ctid 1     J
